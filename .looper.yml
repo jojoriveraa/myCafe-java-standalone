@@ -15,10 +15,13 @@ envs:
 
 flows:
   default:
-#  - node(osx):
-    - shell(name Start): echo "Hello everyone on this ${adjective} ${date}"
+    - call: start
+    - call: start(summer)
     - call: versions
   
+  start:
+    - shell(name Start): echo "Hello everyone on this ${adjective} ${date}."
+
   versions:
     - shell(name Java check):  java -version
     - shell(name Maven check): mvn -v
