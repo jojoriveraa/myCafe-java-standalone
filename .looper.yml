@@ -9,7 +9,6 @@ flows:
     - call: versions
   
   versions: |
-  (name Version checks):
     java -version
     mvn -v
     ruby -v
