@@ -2,13 +2,24 @@ tools:
   jdk: 8
   maven: 3.5.0
 
+envs:
+  global:
+    variables:
+      date: "19th of October"
+      adjective: "rainy"
+  summer:
+    variables: 
+      date: "18th of August"
+      adjective: "hot and sunny"
+
+
 flows:
   default:
 #  - node(osx):
-    - shell(name Start): echo "Hello everyone on this rainy 19th of October!"
+    - shell(name Start): echo "Hello everyone on this ${adjective} ${date}"
     - call: versions
   
   versions:
-    - (name Java check)  java -version
-    - (name Maven check)  mvn -v
-    - (name Ruby check)  ruby -v
+    - shell(name Java check):  java -version
+    - shell(name Maven check): mvn -v
+    - shell(name Ruby check):  ruby -v
