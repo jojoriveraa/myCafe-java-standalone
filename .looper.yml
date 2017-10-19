@@ -1,0 +1,3 @@
+flows:
+  default:
+    shell: echo "Hello everyone on this rainy 19th of October!"
