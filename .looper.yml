@@ -7,3 +7,4 @@ flows:
     - shell: echo "Hello everyone on this rainy 19th of October!"
     - shell: java -version
     - shell: mvn -v
+    - shell: ruby -v
