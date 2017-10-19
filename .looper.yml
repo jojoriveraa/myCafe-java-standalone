@@ -8,7 +8,7 @@ flows:
     - shell(name Start): echo "Hello everyone on this rainy 19th of October!"
     - call: versions
   
-  versions: |
-    java -version
-    mvn -v
-    ruby -v
+  versions:
+    - (name Java check)  java -version
+    - (name Maven check)  mvn -v
+    - (name Ruby check)  ruby -v
