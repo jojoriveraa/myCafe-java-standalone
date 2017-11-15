@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OnDemandBatchRequest ServerLevel="false">
-    <ExecutionDetail CountryCode="{CC}">
-     </ExecutionDetail>    
-    <BusinessDate>{BD}</BusinessDate>
-    <ProcessToExecute>eod_monitor</ProcessToExecute>
-    <OnDemandReason>2</OnDemandReason>
-</OnDemandBatchRequest>

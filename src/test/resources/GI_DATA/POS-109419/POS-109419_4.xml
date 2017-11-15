@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<eod:EndOfDay xmlns:eod="http://www.wal-mart.com/WM/Configuration/namespace/"
-              xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
-              ct:InterfaceName="EndOfDay" ct:CountryCode="{CC}" ct:StoreNbr="{SN}"
-              ct:Timestamp="{EDT}" ct:BusinessDate="{BD}"
-              eod:TotalPOSLogCount="0" />
-

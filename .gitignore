@@ -1,13 +1,4 @@
-.project
-.settings
-target
-tempFiles/
-*/automation.properties
-.settings/
-.classpath
-.project
 target/
-test-output/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
