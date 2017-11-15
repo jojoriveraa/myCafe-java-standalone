@@ -93,7 +93,7 @@ flows:
       - shell: pwd
   
   test:
-    - shell(name package): mvn clean package -B
+    - shell(name package): mvn -e clean package
     - shell(name test): mvn clean test
     - shell(name install): mvn -e -U clean install
   
