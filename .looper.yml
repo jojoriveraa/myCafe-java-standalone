@@ -18,7 +18,7 @@ flows:
     - shell: echo "Default Flow"
     #- call: multi-line-flow
     #- call: group-flow
-    - call: defining-flow
+    #- call: defining-flow
     # - call: docker-build
     #- call: variable-play
     #- call: parse-variables
@@ -89,7 +89,7 @@ flows:
   test:
     - shell: echo "Start test" 
     - shell(name package): mvn -e clean package
-    - shell(name test): mvn -e clean test
+    - shell(name test): mvn -e clean test -DbuildURL=${BUILD_URL}
     - shell(name install): mvn -e -U clean install
   
   release:
