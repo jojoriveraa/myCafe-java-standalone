@@ -12,12 +12,6 @@ triggers: #unable to get them to work
     ignoreMessage: \[ignore\] .*
     #ignoreAuthor: <author name or email>
     #ignoreCommitter: <committer name or email>
-  pr:
-    ignoreMessage:
-      - skip.*
-      - ignore.*
-    #ignoreAuthor: <author name or email>
-    #ignoreCommitter: <committer name or email>
 
 flows:
   default:

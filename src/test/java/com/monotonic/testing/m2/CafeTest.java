@@ -1,6 +1,6 @@
 package com.monotonic.testing.m2;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static com.monotonic.testing.m2.CoffeeType.Espresso;
 import static com.monotonic.testing.m2.CoffeeType.Latte;
@@ -50,7 +50,7 @@ public class CafeTest {
         assertEquals(Latte, coffee.getType());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expectedExceptions = IllegalArgumentException.class)
     public void mustRestockMilk() {
         // given
         Cafe cafe = new Cafe();
@@ -59,7 +59,7 @@ public class CafeTest {
         cafe.restockMilk(0);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test(expectedExceptions = IllegalArgumentException.class)
     public void mustRestockBeans() {
         // given
         Cafe cafe = new Cafe();
@@ -68,7 +68,7 @@ public class CafeTest {
         cafe.restockBeans(0);
     }
 
-    @Test(expected = IllegalStateException.class)
+    @Test(expectedExceptions = IllegalStateException.class)
     public void lattesRequireMilk() {
         // given
         Cafe cafe = new Cafe();
