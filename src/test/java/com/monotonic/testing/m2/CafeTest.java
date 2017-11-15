@@ -44,6 +44,20 @@ public class CafeTest {
         cafe.restockMilk(227);
 
         // when
+        Coffee coffee = cafe.brew(Latte);
+
+        // then
+        assertEquals(Latte, coffee.getType());
+    }
+    
+    @Test
+    public void brewingLatteConsumesBeans() {
+        // given
+        Cafe cafe = new Cafe();
+        cafe.restockBeans(7);
+        cafe.restockMilk(227);
+
+        // when
         cafe.brew(Latte);
 
         // then
@@ -58,10 +72,10 @@ public class CafeTest {
         cafe.restockMilk(227);
 
         // when
-        Coffee coffee = cafe.brew(Latte);
+        cafe.brew(Latte);
 
         // then
-        assertEquals(Latte, coffee.getType());
+        assertEquals(0, cafe.getMilkInStock());
     }
 
     @Test(expectedExceptions = IllegalArgumentException.class)
