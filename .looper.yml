@@ -51,7 +51,7 @@ flows:
   defining-flow:
   - node(linux): #available node types are linux, osx, windows
     - (name Welcome) echo "Hello World"
-    - shell(name Packaging): mvn clean package -B
+    - shell(name Packaging): mvn -e clean package
     - shell(name Bye): echo "The End"
 
   parse-variables:
