@@ -93,8 +93,9 @@ flows:
       - shell: pwd
   
   test:
+    - shell: echo "Start test" 
     - shell(name package): mvn -e clean package
-    - shell(name test): mvn clean test
+    - shell(name test): mvn -e clean test
     - shell(name install): mvn -e -U clean install
   
   release:
