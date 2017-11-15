@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OnDemandBatchRequest ServerLevel="false">
+    <ExecutionDetail CountryCode="{CC}">
+        <StoreNbr>{SN}</StoreNbr>
+    </ExecutionDetail>
+    <BusinessDate>{BD}</BusinessDate>
+    <ProcessToExecute>category_maintenance</ProcessToExecute>
+    <OnDemandReason>2</OnDemandReason>
+</OnDemandBatchRequest>

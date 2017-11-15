@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" parallel="tests">
+	<test name="Suite_One_Test1" parallel="classes" thread-count="1">
+		<parameter name="storeNumber" value="000005540" />
+		<packages>
+			<package name="com.automation.gi.tests.movement" />
+		</packages>
+	</test>
+	<test name="Suite_One_Test2" parallel="classes" thread-count="1">
+		<parameter name="storeNumber" value="000005528" />		
+		<packages>
+			<package name="com.automation.gi.tests.binlog" />
+		</packages>
+	</test>
+</suite>

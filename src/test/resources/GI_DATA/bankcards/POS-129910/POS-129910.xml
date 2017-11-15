@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/" xmlns:wm="http://www.wal-mart.com/ISD/POS/namespace/"
+			   xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+			   ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+	<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+		<Transaction>
+			<CountryCode>{CC}</CountryCode>
+            <WorkstationID>{WS}</WorkstationID>
+            <SequenceNumber>{SQN}</SequenceNumber>
+            <EndDateTime>{EDT}</EndDateTime>
+			<OperatorID>1111</OperatorID>
+			<RetailTransaction Version="2.2" TypeCode="Sale">
+				<LineItem>
+					<SequenceNumber>9</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>48323310</POSItemID>
+						</POSIdentity>
+						<ItemID>334498</ItemID>
+						<MerchandiseHierarchy Level="Department">7</MerchandiseHierarchy>
+						<Description>BALLERINA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>2862.00</UnitCostPrice>
+						<ActualSalesUnitPrice>2933.00</ActualSalesUnitPrice>
+						<ExtendedAmount>2933.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>3490.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>557.00</Amount>
+							<Percent>19.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>12</SequenceNumber>
+					<Tax TaxRateType="Percentage">
+						<Amount>5841.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>10</SequenceNumber>
+					<Tender TenderType="CreditDebit">
+						<TenderTokenID>90810003003820111206102530</TenderTokenID>
+						<Amount>36588.00</Amount>
+						<Authorization>
+							<AuthorizationCode>802088</AuthorizationCode>
+							<AuthorizationDateTime>2015-05-01T12:12:56</AuthorizationDateTime>
+						</Authorization>
+						<CreditDebit CardType="Debit">
+							<PrimaryAccountNumber />
+							<PartialAccountNumber>1234</PartialAccountNumber>
+						</CreditDebit>
+					</Tender>
+				</LineItem>
+				<Total TotalType="GrossPlus">37578.00</Total>
+				<Total TotalType="GrossMinus">0.00</Total>
+				<ElapsedTime Type="Ring">22</ElapsedTime>
+				<ElapsedTime Type="Tender">11</ElapsedTime>
+				<ElapsedTime Type="Other">98</ElapsedTime>
+			</RetailTransaction>
+		</Transaction>
+	</POSLog>
+</WalmartPOSLog>

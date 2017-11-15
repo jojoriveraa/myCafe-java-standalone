@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+      <OperatorID>21</OperatorID>
+      <RetailTransaction Version="2.2" TypeCode="Sale">
+        <LineItem>
+          <SequenceNumber>1</SequenceNumber>
+          <Sale EntryMethod="Keyed">
+            <POSIdentity>
+              <POSItemID>7896584062560</POSItemID>
+            </POSIdentity>
+            <ItemID>500678172</ItemID>
+            <MerchandiseHierarchy Level="Department">77</MerchandiseHierarchy>
+            <Description>UN INT VI09F</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>373.95</UnitCostPrice>
+            <ActualSalesUnitPrice>462.83</ActualSalesUnitPrice>
+            <ExtendedAmount>462.83</ExtendedAmount>
+            <ExtendedAmountIncludingTax>510.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>0.00</Amount>
+              <Percent>0.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>1</TaxRateSeqNbr>
+            </Tax>
+            <Tax TaxRateType="Percentage">
+              <Amount>8.42</Amount>
+              <Percent>1.65</Percent>
+              <TaxRuleID>2</TaxRuleID>
+              <TaxRateSeqNbr>1</TaxRateSeqNbr>
+            </Tax>
+            <Tax TaxRateType="Percentage">
+              <Amount>38.75</Amount>
+              <Percent>7.6</Percent>
+              <TaxRuleID>3</TaxRuleID>
+              <TaxRateSeqNbr>1</TaxRateSeqNbr>
+            </Tax>
+            <InterestFreeFlag>false</InterestFreeFlag>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>2</SequenceNumber>
+          <Sale EntryMethod="Keyed">
+            <POSIdentity>
+              <POSItemID>7896584062570</POSItemID>
+            </POSIdentity>
+            <ItemID>500678171</ItemID>
+            <MerchandiseHierarchy Level="Department">77</MerchandiseHierarchy>
+            <Description>UN EXT VE09F</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>665.39</UnitCostPrice>
+            <ActualSalesUnitPrice>716.02</ActualSalesUnitPrice>
+            <ExtendedAmount>716.02</ExtendedAmount>
+            <ExtendedAmountIncludingTax>789.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>0.00</Amount>
+              <Percent>0.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>1</TaxRateSeqNbr>
+            </Tax>
+            <Tax TaxRateType="Percentage">
+              <Amount>13.02</Amount>
+              <Percent>1.65</Percent>
+              <TaxRuleID>2</TaxRuleID>
+              <TaxRateSeqNbr>1</TaxRateSeqNbr>
+            </Tax>
+            <Tax TaxRateType="Percentage">
+              <Amount>59.96</Amount>
+              <Percent>7.6</Percent>
+              <TaxRuleID>3</TaxRuleID>
+              <TaxRateSeqNbr>1</TaxRateSeqNbr>
+            </Tax>
+            <InterestFreeFlag>false</InterestFreeFlag>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>3</SequenceNumber>
+          <Tender TenderType="CreditDebit">
+            <Amount>500.00</Amount>
+            <Authorization>
+              <AuthorizationCode>RP</AuthorizationCode>
+              <AuthorizationDateTime>{EDT}</AuthorizationDateTime>
+              <DiagnosticCode>1-Approved</DiagnosticCode>
+            </Authorization>
+            <CreditDebit CardType="Debit" SubTypeCode="RP">
+              <PrimaryAccountNumber />
+              <PartialAccountNumber>1388</PartialAccountNumber>
+            </CreditDebit>
+          </Tender>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>4</SequenceNumber>
+          <Tender TenderType="CreditDebit">
+            <Amount>799.00</Amount>
+            <Authorization>
+              <AuthorizationCode>034032</AuthorizationCode>
+              <AuthorizationDateTime>{EDT}</AuthorizationDateTime>
+              <DiagnosticCode>1-Approved</DiagnosticCode>
+            </Authorization>
+            <CreditDebit CardType="Credit" TypeCode="PrivateLabel" SubTypeCode="HC" NoInterestFlag="true">
+              <PrimaryAccountNumber />
+              <PartialAccountNumber>7149</PartialAccountNumber>
+              <NumberOfInstallments>10</NumberOfInstallments>
+              <PromotionID>93</PromotionID>
+              <PromotionMarkID>8000</PromotionMarkID>
+            </CreditDebit>
+          </Tender>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>5</SequenceNumber>
+          <Tax TaxRateType="Percentage">
+            <Amount>0.00</Amount>
+            <Percent>0.0</Percent>
+            <TaxRuleID>1</TaxRuleID>
+            <TaxRateSeqNbr>1</TaxRateSeqNbr>
+          </Tax>
+          <Tax TaxRateType="Percentage">
+            <Amount>21.44</Amount>
+            <Percent>1.65</Percent>
+            <TaxRuleID>2</TaxRuleID>
+            <TaxRateSeqNbr>1</TaxRateSeqNbr>
+          </Tax>
+          <Tax TaxRateType="Percentage">
+            <Amount>98.71</Amount>
+            <Percent>7.6</Percent>
+            <TaxRuleID>3</TaxRuleID>
+            <TaxRateSeqNbr>1</TaxRateSeqNbr>
+          </Tax>
+        </LineItem>
+        <Total TotalType="GrossPlus">1299.00</Total>
+        <Total TotalType="GrossMinus">0.00</Total>
+        <ElapsedTime Type="Ring">8</ElapsedTime>
+        <ElapsedTime Type="Tender">67</ElapsedTime>
+        <ElapsedTime Type="Other">277</ElapsedTime>
+      </RetailTransaction>
+    </Transaction>
+  </POSLog>
+</WalmartPOSLog>
+
+

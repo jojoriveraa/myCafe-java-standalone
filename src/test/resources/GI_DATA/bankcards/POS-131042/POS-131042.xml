@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+							 xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+							 ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:ReprocessRequest="false" ct:StoreNbr="{SN}"
+							 ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+	<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+		<Transaction>
+			<CountryCode>{CC}</CountryCode>
+			<WorkstationID>{WS}</WorkstationID>
+			<SequenceNumber>{SQN}</SequenceNumber>
+			<EndDateTime>{EDT}</EndDateTime>
+			<OperatorID>17</OperatorID>
+			<RetailTransaction Version="2.2" TypeCode="Sale">
+				<LineItem>
+					<SequenceNumber>1</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>48533980</POSItemID>
+						</POSIdentity>
+						<ItemID>264497</ItemID>
+						<MerchandiseHierarchy Level="Department">14</MerchandiseHierarchy>
+						<Description>TENDEDERO LA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>3592.00</UnitCostPrice>
+						<ActualSalesUnitPrice>4958.00</ActualSalesUnitPrice>
+						<ExtendedAmount>4958.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>5900.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>942.00</Amount>
+							<Percent>19.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>2</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7809604026640</POSItemID>
+						</POSIdentity>
+						<ItemID>496636</ItemID>
+						<MerchandiseHierarchy Level="Department">4</MerchandiseHierarchy>
+						<Description>PAP HIG RM</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>1295.00</UnitCostPrice>
+						<ActualSalesUnitPrice>1256.00</ActualSalesUnitPrice>
+						<ExtendedAmount>1256.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>1495.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+							<SequenceNumber>1</SequenceNumber>
+							<Amount Action="Subtract">248.00</Amount>
+							<PreviousPrice>1504.00</PreviousPrice>
+							<NewPrice>1256.00</NewPrice>
+							<ReasonCode>PricingError</ReasonCode>
+						</RetailPriceModifier>
+						<Tax TaxRateType="Percentage">
+							<Amount>239.00</Amount>
+							<Percent>19.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>6</SequenceNumber>
+					<Tender TenderType="CreditDebit" TypeCode="Cashout">
+						<Amount>7270.00</Amount>
+						<Authorization>
+							<AuthorizationCode>00497465</AuthorizationCode>
+						</Authorization>
+						<CreditDebit CardType="Debit" TypeCode="Payroll">
+							<PrimaryAccountNumber />
+							<PartialAccountNumber>0001</PartialAccountNumber>
+						</CreditDebit>
+					</Tender>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>7</SequenceNumber>
+					<Tax TaxRateType="Percentage">
+						<Amount>1508.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</LineItem>
+				<Total TotalType="GrossPlus">9440.00</Total>
+				<Total TotalType="GrossMinus">0.00</Total>
+				<ElapsedTime Type="Ring">19</ElapsedTime>
+				<ElapsedTime Type="Tender">5</ElapsedTime>
+				<ElapsedTime Type="Other">83</ElapsedTime>
+			</RetailTransaction>
+		</Transaction>
+	</POSLog>
+</WalmartPOSLog>

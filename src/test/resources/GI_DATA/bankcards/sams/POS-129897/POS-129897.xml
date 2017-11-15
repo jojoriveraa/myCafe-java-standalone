@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+	  <OrganizationHierarchy Level="OperatingCompany" ID="Sams">Sams</OrganizationHierarchy>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+      <OperatorID>67</OperatorID>
+      <RetailTransaction Version="2.2" TypeCode="Return">
+        <LineItem>
+          <SequenceNumber>1</SequenceNumber>
+          <Return EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7801610323230</POSItemID>
+            </POSIdentity>
+            <ItemID>263993</ItemID>
+            <MerchandiseHierarchy Level="Department">95</MerchandiseHierarchy>
+            <Description>GAS COLA DES</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>1281.00</UnitCostPrice>
+            <ActualSalesUnitPrice>-1420.00</ActualSalesUnitPrice>
+            <ExtendedAmount>-1420.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>-1690.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>-270.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Return>
+        </LineItem>       
+        <Total TotalType="GrossPlus">0.00</Total>
+        <Total TotalType="GrossMinus">28389.00</Total>
+		<Customer Action="Read">
+					<CustomerName>
+						<Name Location="First">John</Name>
+						<Name Location="Last">Smith</Name>
+						<FullName>John Smith</FullName>
+					</CustomerName>
+					<Address TypeCode="Home">
+						<AddressLine TypeCode="Street" RelativeOrder="1">APTO 601</AddressLine>
+						<AddressLine TypeCode="Street" RelativeOrder="2">VILA NOVA CONCEICAO</AddressLine>
+						<City>SAO PAULO</City>
+						<Territory TypeCode="State">3353530</Territory>
+						<PostalCode>04544000</PostalCode>
+						<Country Code="{CC}">{CC}</Country>
+						<FullAddress>THIS IS THE FULL ADDRESS</FullAddress>
+						<State>SP</State>
+					</Address>
+					<Telephone>
+						<FullTelephoneNumber>1138495851</FullTelephoneNumber>
+						<AreaCode>11</AreaCode>
+					</Telephone>
+					<EMail>
+						<EMailAddress>name@something.com</EMailAddress>
+					</EMail>
+					<LocalRequirements>
+						<Name>SIC</Name>
+						<Value>008111</Value>
+					</LocalRequirements>
+					<LocalRequirements>
+						<Name>SamsDatabase</Name>
+						<Value>105</Value>
+					</LocalRequirements>
+					<LocalRequirements>
+						<Name>SamsMemberType</Name>
+						<Value>W</Value>
+					</LocalRequirements>
+					<LocalRequirements>
+						<Name>SamsMemberStatus</Name>
+						<Value>A</Value>
+					</LocalRequirements>
+					<LocalRequirements>
+						<Name>SamsCardholderType</Name>
+						<Value>P</Value>
+					</LocalRequirements>
+					<LocalRequirements>
+						<Name>SamsCardholderStatus</Name>
+						<Value>A</Value>
+					</LocalRequirements>
+					<AccountNumber>10183577030</AccountNumber>
+					<TaxCertificate></TaxCertificate>
+					<TaxExemptionReason></TaxExemptionReason>
+				</Customer>
+        <ElapsedTime Type="Ring">51</ElapsedTime>
+        <ElapsedTime Type="Tender">46</ElapsedTime>
+        <ElapsedTime Type="Other">17</ElapsedTime>
+      </RetailTransaction>
+    </Transaction>
+  </POSLog>
+</WalmartPOSLog>

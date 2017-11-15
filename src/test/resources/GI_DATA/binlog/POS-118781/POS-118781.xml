@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+      <OperatorID>67</OperatorID>
+     <RetailTransaction Version="2.2"  TransactionStatus="Canceled" TypeCode="Sale">
+        <LineItem>
+          <SequenceNumber>1</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7801610323230</POSItemID>
+            </POSIdentity>
+            <ItemID>263993</ItemID>
+            <MerchandiseHierarchy Level="Department">95</MerchandiseHierarchy>
+            <Description>GAS COLA DES</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>1281.00</UnitCostPrice>
+            <ActualSalesUnitPrice>1420.00</ActualSalesUnitPrice>
+            <ExtendedAmount>1420.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>1690.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>270.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>2</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7802640600400</POSItemID>
+            </POSIdentity>
+            <ItemID>264729</ItemID>
+            <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+            <Description>KETCHUP</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>738.00</UnitCostPrice>
+            <ActualSalesUnitPrice>899.00</ActualSalesUnitPrice>
+            <ExtendedAmount>899.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>1070.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>171.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>6</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7809559200330</POSItemID>
+            </POSIdentity>
+            <ItemID>436226</ItemID>
+            <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+            <Description>HARINA S/P</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>312.00</UnitCostPrice>
+            <ActualSalesUnitPrice>402.00</ActualSalesUnitPrice>
+            <ExtendedAmount>402.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>479.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>77.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>7</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>2069030000000</POSItemID>
+            </POSIdentity>
+            <ItemID>451565</ItemID>
+            <MerchandiseHierarchy Level="Department">80</MerchandiseHierarchy>
+            <EmbeddedPriceFlag>true</EmbeddedPriceFlag>
+            <Description>JAMON DE PAV</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>4596.00</UnitCostPrice>
+            <ActualSalesUnitPrice>5344.00</ActualSalesUnitPrice>
+            <ExtendedAmount>2405.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>2862.00</ExtendedAmountIncludingTax>
+            <Quantity UnitOfMeasureCode="KG">0.450</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>457.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>8</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7805000168690</POSItemID>
+            </POSIdentity>
+            <ItemID>293566</ItemID>
+            <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+            <Description>MAYONESA REG</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>1196.00</UnitCostPrice>
+            <ActualSalesUnitPrice>1555.00</ActualSalesUnitPrice>
+            <ExtendedAmount>1555.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>1850.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>295.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>9</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7802810006830</POSItemID>
+            </POSIdentity>
+            <ItemID>264065</ItemID>
+            <MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+            <Description>MANTECA HIDR</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>469.00</UnitCostPrice>
+            <ActualSalesUnitPrice>580.00</ActualSalesUnitPrice>
+            <ExtendedAmount>580.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>690.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>110.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>10</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>2139290000000</POSItemID>
+            </POSIdentity>
+            <ItemID>450313</ItemID>
+            <MerchandiseHierarchy Level="Department">93</MerchandiseHierarchy>
+            <EmbeddedPriceFlag>true</EmbeddedPriceFlag>
+            <Description>V TAPAPECHO</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>2711.00</UnitCostPrice>
+            <ActualSalesUnitPrice>3689.00</ActualSalesUnitPrice>
+            <ExtendedAmount>4932.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>5869.00</ExtendedAmountIncludingTax>
+            <Quantity UnitOfMeasureCode="KG">1.337</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>937.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>       
+        <LineItem>
+          <SequenceNumber>12</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>2167840000000</POSItemID>
+            </POSIdentity>
+            <ItemID>286265</ItemID>
+            <MerchandiseHierarchy Level="Department">93</MerchandiseHierarchy>
+            <EmbeddedPriceFlag>true</EmbeddedPriceFlag>
+            <Description>TRUTRO ENTER</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>1204.00</UnitCostPrice>
+            <ActualSalesUnitPrice>1588.00</ActualSalesUnitPrice>
+            <ExtendedAmount>3272.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>3893.00</ExtendedAmountIncludingTax>
+            <Quantity UnitOfMeasureCode="KG">2.060</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>621.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>13</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7809559200340</POSItemID>
+            </POSIdentity>
+            <ItemID>436225</ItemID>
+            <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+            <Description>HARINA C/P</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>330.00</UnitCostPrice>
+            <ActualSalesUnitPrice>403.00</ActualSalesUnitPrice>
+            <ExtendedAmount>403.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>480.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>77.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>14</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7809559200340</POSItemID>
+            </POSIdentity>
+            <ItemID>436225</ItemID>
+            <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+            <Description>HARINA C/P</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>330.00</UnitCostPrice>
+            <ActualSalesUnitPrice>403.00</ActualSalesUnitPrice>
+            <ExtendedAmount>403.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>480.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>77.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>15</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7804922001020</POSItemID>
+            </POSIdentity>
+            <ItemID>262862</ItemID>
+            <MerchandiseHierarchy Level="Department">2</MerchandiseHierarchy>
+            <Description>GEL FIJAD AL</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>1001.00</UnitCostPrice>
+            <ActualSalesUnitPrice>882.00</ActualSalesUnitPrice>
+            <ExtendedAmount>882.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>1050.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <RetailPriceModifier DiscountBenefit="DirectGlobalPromotion">
+              <SequenceNumber>1</SequenceNumber>
+              <Amount Action="Add">279.00</Amount>
+              <PreviousPrice>603.00</PreviousPrice>
+              <NewPrice>882.00</NewPrice>
+              <PromotionID>4112</PromotionID>
+              <ReasonCode>Promotion</ReasonCode>
+            </RetailPriceModifier>
+            <Tax TaxRateType="Percentage">
+              <Amount>168.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>16</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7803200036300</POSItemID>
+            </POSIdentity>
+            <ItemID>264247</ItemID>
+            <MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+            <Description>MARGARINA LI</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>700.00</UnitCostPrice>
+            <ActualSalesUnitPrice>831.00</ActualSalesUnitPrice>
+            <ExtendedAmount>831.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>989.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>158.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>17</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7803200036300</POSItemID>
+            </POSIdentity>
+            <ItemID>264247</ItemID>
+            <MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+            <Description>MARGARINA LI</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>700.00</UnitCostPrice>
+            <ActualSalesUnitPrice>831.00</ActualSalesUnitPrice>
+            <ExtendedAmount>831.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>989.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>158.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>18</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7803000201150</POSItemID>
+            </POSIdentity>
+            <ItemID>261384</ItemID>
+            <MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+            <Description>LEVADURA FRE</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>909.00</UnitCostPrice>
+            <ActualSalesUnitPrice>1033.00</ActualSalesUnitPrice>
+            <ExtendedAmount>1033.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>1229.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>196.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem VoidFlag="true">
+          <SequenceNumber>20</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7804922001020</POSItemID>
+            </POSIdentity>
+            <ItemID>262862</ItemID>
+            <MerchandiseHierarchy Level="Department">2</MerchandiseHierarchy>
+            <Description>GEL FIJAD AL</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>1001.00</UnitCostPrice>
+            <ActualSalesUnitPrice>-882.00</ActualSalesUnitPrice>
+            <ExtendedAmount>-882.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>-1050.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <RetailPriceModifier DiscountBenefit="DirectGlobalPromotion">
+              <SequenceNumber>1</SequenceNumber>
+              <Amount Action="Subtract">125.00</Amount>
+              <PreviousPrice>-757.00</PreviousPrice>
+              <NewPrice>-882.00</NewPrice>
+              <PromotionID>4112</PromotionID>
+              <ReasonCode>Promotion</ReasonCode>
+            </RetailPriceModifier>
+            <Tax TaxRateType="Percentage">
+              <Amount>168.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>21</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7809559200330</POSItemID>
+            </POSIdentity>
+            <ItemID>436226</ItemID>
+            <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+            <Description>HARINA S/P</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>312.00</UnitCostPrice>
+            <ActualSalesUnitPrice>402.00</ActualSalesUnitPrice>
+            <ExtendedAmount>402.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>479.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>77.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>22</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>605388886780</POSItemID>
+            </POSIdentity>
+            <ItemID>251422</ItemID>
+            <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+            <Description>PAPA FRITA C</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>540.00</UnitCostPrice>
+            <ActualSalesUnitPrice>748.00</ActualSalesUnitPrice>
+            <ExtendedAmount>748.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>890.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>142.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>23</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7801875052050</POSItemID>
+            </POSIdentity>
+            <ItemID>261906</ItemID>
+            <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+            <Description>TE CEYLAN</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>962.00</UnitCostPrice>
+            <ActualSalesUnitPrice>1034.00</ActualSalesUnitPrice>
+            <ExtendedAmount>1034.00</ExtendedAmount>
+            <ExtendedAmountIncludingTax>1230.00</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>196.00</Amount>
+              <Percent>19.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>24</SequenceNumber>
+          <Tender TenderType="CreditDebit">
+            <TenderTokenID>00400018003420140603120306</TenderTokenID>
+            <Amount>28389.00</Amount>
+            <Authorization>
+              <AuthorizationCode>361739</AuthorizationCode>
+              <AuthorizationDateTime>2014-06-12T12:03:44</AuthorizationDateTime>
+            </Authorization>
+            <CreditDebit CardType="Credit" TypeCode="PrivateLabel">
+              <PrimaryAccountNumber></PrimaryAccountNumber>
+              <PartialAccountNumber>4003</PartialAccountNumber>
+            </CreditDebit>
+          </Tender>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>25</SequenceNumber>
+          <Tax TaxRateType="Percentage">
+            <Amount>4534.00</Amount>
+            <Percent>19.0</Percent>
+            <TaxRuleID>1</TaxRuleID>
+            <TaxRateSeqNbr>2</TaxRateSeqNbr>
+          </Tax>
+        </LineItem>
+        <Total TotalType="GrossPlus">28389.00</Total>
+        <Total TotalType="GrossMinus">0.00</Total>
+        <ElapsedTime Type="Ring">51</ElapsedTime>
+        <ElapsedTime Type="Tender">46</ElapsedTime>
+        <ElapsedTime Type="Other">17</ElapsedTime>
+      </RetailTransaction>
+    </Transaction>
+  </POSLog>
+</WalmartPOSLog>

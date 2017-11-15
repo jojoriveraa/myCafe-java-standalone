@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+			<OperatorID>020</OperatorID>
+		<RetailTransaction Version="2.2" TypeCode="Sale">
+			<LineItem>
+				<SequenceNumber>1</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>71220</POSItemID>
+					</POSIdentity>
+					<ItemID>6800217</ItemID>
+					<MerchandiseHierarchy Level="Department">68</MerchandiseHierarchy>
+
+					<Description>REDONDEO IVA</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<ActualSalesUnitPrice>0.01</ActualSalesUnitPrice>
+					<ExtendedAmount>0.01</ExtendedAmount>
+					<ExtendedAmountIncludingTax>0.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<Tax TaxRateType="Percentage">
+						<Amount>-0.01</Amount>
+						<Percent>21.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+					<OtherIncomeFlag>true</OtherIncomeFlag>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>2</SequenceNumber>
+				<Discount DiscountBenefit="AssociateDiscount">
+					<Amount>4.53</Amount>
+					<AmountIncludingTax>5.72</AmountIncludingTax>
+				</Discount>
+				<Tax TaxRateType="Percentage">
+					<Amount>-0.97</Amount>
+					<Percent>21.0</Percent>
+					<Reason>Discount</Reason>
+					<TaxRuleID>1</TaxRuleID>
+					<TaxRateSeqNbr>2</TaxRateSeqNbr>
+				</Tax>
+				<Tax TaxRateType="Percentage">
+					<Amount>-0.18</Amount>
+					<Percent>3.67</Percent>
+					<Reason>Discount</Reason>
+					<TaxRuleID>4</TaxRuleID>
+					<TaxRateSeqNbr>12</TaxRateSeqNbr>
+				</Tax>
+				<Tax TaxRateType="Percentage">
+					<Amount>-0.04</Amount>
+					<Percent>0.62</Percent>
+					<Reason>Discount</Reason>
+					<TaxRuleID>5</TaxRuleID>
+					<TaxRateSeqNbr>10</TaxRateSeqNbr>
+				</Tax>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>3</SequenceNumber>
+				<Tender TenderType="CreditDebit">
+					<Amount>142.65</Amount>
+					<Authorization>
+						<AuthorizationCode>123456</AuthorizationCode>
+						<ReferenceNumber>615700067374</ReferenceNumber>
+						<AuthorizationDateTime>2016-06-30T16:23:56</AuthorizationDateTime>
+						<AuthorizationDescription>18-PrivateLabelCredit</AuthorizationDescription>
+						<DiagnosticCode>1-Approved</DiagnosticCode>
+						<RequestedAmount>142.65</RequestedAmount>
+					</Authorization>
+					<CreditDebit CardType="Credit" NoInterestFlag="true" SubTypeCode="66" TypeCode="PrivateLabel">
+						<PrimaryAccountNumber/>
+						<PartialAccountNumber>1786</PartialAccountNumber>
+						<NumberOfInstallments>5</NumberOfInstallments>
+						<PromotionID>136</PromotionID>
+						<PromotionMarkID>8000</PromotionMarkID>
+					</CreditDebit>
+				</Tender>
+			</LineItem>
+
+			<LineItem>
+				<SequenceNumber>4</SequenceNumber>
+				<Tax TaxRateType="Percentage">
+					<Amount>8.98</Amount>
+					<Percent>21.0</Percent>
+					<TaxRuleID>1</TaxRuleID>
+					<TaxRateSeqNbr>2</TaxRateSeqNbr>
+				</Tax>
+				<Tax TaxRateType="Percentage">
+					<Amount>1.57</Amount>
+					<Percent>3.67</Percent>
+					<TaxRuleID>4</TaxRuleID>
+					<TaxRateSeqNbr>12</TaxRateSeqNbr>
+				</Tax>
+				<Tax TaxRateType="Percentage">
+					<Amount>0.25</Amount>
+					<Percent>0.62</Percent>
+					<TaxRuleID>5</TaxRuleID>
+					<TaxRateSeqNbr>10</TaxRateSeqNbr>
+				</Tax>
+			</LineItem>
+			<Total TotalType="GrossPlus">51.73</Total>
+			<Total TotalType="GrossMinus">0.00</Total>
+			<ElapsedTime Type="Ring">33</ElapsedTime>
+			<ElapsedTime Type="Tender">49</ElapsedTime>
+			<ElapsedTime Type="Other">6</ElapsedTime>
+		</RetailTransaction>
+	</Transaction>
+  </POSLog>
+</WalmartPOSLog>

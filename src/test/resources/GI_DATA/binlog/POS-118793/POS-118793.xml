@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+        <OperatorID>215</OperatorID>
+        <RetailTransaction Version="2.2" TypeCode="Sale">
+            <LineItem>
+                <SequenceNumber>1</SequenceNumber>
+                <Sale EntryMethod="Scanned">
+                    <POSIdentity>
+                        <POSItemID>7790411001490</POSItemID>
+                    </POSIdentity>
+                    <ItemID>9267412</ItemID>
+                    <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+                    <Description>ROSAM PLUS</Description>
+                    <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+                    <UnitCostPrice>33.47</UnitCostPrice>
+                    <ActualSalesUnitPrice>35.52</ActualSalesUnitPrice>
+                    <ExtendedAmount>35.52</ExtendedAmount>
+                    <ExtendedAmountIncludingTax>44.91</ExtendedAmountIncludingTax>
+                    <Quantity>1.000</Quantity>
+                    <Tax TaxRateType="Percentage">
+                        <Amount>7.80</Amount>
+                        <Percent>21.0</Percent>
+                        <TaxRuleID>1</TaxRuleID>
+                        <TaxRateSeqNbr>2</TaxRateSeqNbr>
+                    </Tax>
+                    <Tax TaxRateType="Percentage">
+                        <Amount>1.36</Amount>
+                        <Percent>3.67</Percent>
+                        <TaxRuleID>4</TaxRuleID>
+                        <TaxRateSeqNbr>12</TaxRateSeqNbr>
+                    </Tax>
+                    <Tax TaxRateType="Percentage">
+                        <Amount>0.23</Amount>
+                        <Percent>0.62</Percent>
+                        <TaxRuleID>5</TaxRuleID>
+                        <TaxRateSeqNbr>10</TaxRateSeqNbr>
+                    </Tax>
+                </Sale>
+            </LineItem>
+            <LineItem>
+                <SequenceNumber>2</SequenceNumber>
+                <Sale EntryMethod="Scanned">
+                    <POSIdentity>
+                        <POSItemID>7790411001490</POSItemID>
+                    </POSIdentity>
+                    <ItemID>9267412</ItemID>
+                    <MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+                    <Description>ROSAM PLUS</Description>
+                    <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+                    <UnitCostPrice>33.47</UnitCostPrice>
+                    <ActualSalesUnitPrice>35.52</ActualSalesUnitPrice>
+                    <ExtendedAmount>35.52</ExtendedAmount>
+                    <ExtendedAmountIncludingTax>44.91</ExtendedAmountIncludingTax>
+                    <Quantity>1.000</Quantity>
+                    <Tax TaxRateType="Percentage">
+                        <Amount>7.80</Amount>
+                        <Percent>21.0</Percent>
+                        <TaxRuleID>1</TaxRuleID>
+                        <TaxRateSeqNbr>2</TaxRateSeqNbr>
+                    </Tax>
+                    <Tax TaxRateType="Percentage">
+                        <Amount>1.36</Amount>
+                        <Percent>3.67</Percent>
+                        <TaxRuleID>4</TaxRuleID>
+                        <TaxRateSeqNbr>12</TaxRateSeqNbr>
+                    </Tax>
+                    <Tax TaxRateType="Percentage">
+                        <Amount>0.23</Amount>
+                        <Percent>0.62</Percent>
+                        <TaxRuleID>5</TaxRuleID>
+                        <TaxRateSeqNbr>10</TaxRateSeqNbr>
+                    </Tax>
+                </Sale>
+            </LineItem>
+            <LineItem>
+                <SequenceNumber>3</SequenceNumber>
+                <Sale EntryMethod="Scanned">
+                    <POSIdentity>
+                        <POSItemID>7790045823450</POSItemID>
+                    </POSIdentity>
+                    <ItemID>110887</ItemID>
+                    <MerchandiseHierarchy Level="Department">1</MerchandiseHierarchy>
+                    <Description>FRUTIGRAN</Description>
+                    <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+                    <UnitCostPrice>7.54</UnitCostPrice>
+                    <ActualSalesUnitPrice>11.86</ActualSalesUnitPrice>
+                    <ExtendedAmount>11.86</ExtendedAmount>
+                    <ExtendedAmountIncludingTax>14.99</ExtendedAmountIncludingTax>
+                    <Quantity>1.000</Quantity>
+                    <Tax TaxRateType="Percentage">
+                        <Amount>2.60</Amount>
+                        <Percent>21.0</Percent>
+                        <TaxRuleID>1</TaxRuleID>
+                        <TaxRateSeqNbr>2</TaxRateSeqNbr>
+                    </Tax>
+                    <Tax TaxRateType="Percentage">
+                        <Amount>0.45</Amount>
+                        <Percent>3.67</Percent>
+                        <TaxRuleID>4</TaxRuleID>
+                        <TaxRateSeqNbr>12</TaxRateSeqNbr>
+                    </Tax>
+                    <Tax TaxRateType="Percentage">
+                        <Amount>0.08</Amount>
+                        <Percent>0.62</Percent>
+                        <TaxRuleID>5</TaxRuleID>
+                        <TaxRateSeqNbr>10</TaxRateSeqNbr>
+                    </Tax>
+                </Sale>
+            </LineItem>
+            <LineItem>
+                <SequenceNumber>4</SequenceNumber>
+                <Sale EntryMethod="Scanned">
+                    <POSIdentity>
+                        <POSItemID>71220</POSItemID>
+                    </POSIdentity>
+                    <ItemID>6800217</ItemID>
+                    <MerchandiseHierarchy Level="Department">68</MerchandiseHierarchy>
+                    <Description>REDONDEO IVA</Description>
+                    <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+                    <ActualSalesUnitPrice>0.01</ActualSalesUnitPrice>
+                    <ExtendedAmount>0.01</ExtendedAmount>
+                    <ExtendedAmountIncludingTax>0.01</ExtendedAmountIncludingTax>
+                    <Quantity>1.000</Quantity>
+                    <OtherIncomeFlag>true</OtherIncomeFlag>
+                </Sale>
+            </LineItem>
+            <LineItem>
+                <SequenceNumber>5</SequenceNumber>
+                <Tender TenderType="Cash">
+                    <Amount>129.39</Amount>
+                </Tender>
+            </LineItem>
+            <LineItem>
+                <SequenceNumber>6</SequenceNumber>
+                <Tax TaxRateType="Percentage">
+                    <Amount>18.20</Amount>
+                    <Percent>21.0</Percent>
+                    <TaxRuleID>1</TaxRuleID>
+                    <TaxRateSeqNbr>2</TaxRateSeqNbr>
+                </Tax>
+                <Tax TaxRateType="Percentage">
+                    <Amount>3.17</Amount>
+                    <Percent>3.67</Percent>
+                    <TaxRuleID>4</TaxRuleID>
+                    <TaxRateSeqNbr>12</TaxRateSeqNbr>
+                </Tax>
+                <Tax TaxRateType="Percentage">
+                    <Amount>0.54</Amount>
+                    <Percent>0.62</Percent>
+                    <TaxRuleID>5</TaxRuleID>
+                    <TaxRateSeqNbr>10</TaxRateSeqNbr>
+                </Tax>
+                <Tax TaxRateType="TurnoverTax">
+                    <Amount>5.24</Amount>
+                    <TaxRuleID>11</TaxRuleID>
+                    <TaxRateSeqNbr>924</TaxRateSeqNbr>
+                </Tax>
+                <Tax TaxRateType="TurnoverTax">
+                    <Amount>6.93</Amount>
+                    <TaxRuleID>11</TaxRuleID>
+                    <TaxRateSeqNbr>902</TaxRateSeqNbr>
+                </Tax>
+                <Tax TaxRateType="TurnoverTax">
+                    <Amount>4.33</Amount>
+                    <TaxRuleID>11</TaxRuleID>
+                    <TaxRateSeqNbr>919</TaxRateSeqNbr>
+                </Tax>
+                <Tax TaxRateType="TurnoverTax">
+                    <Amount>2.17</Amount>
+                    <TaxRuleID>11</TaxRuleID>
+                    <TaxRateSeqNbr>903</TaxRateSeqNbr>
+                </Tax>
+                <Tax TaxRateType="TurnoverTax">
+                    <Amount>4.33</Amount>
+                    <TaxRuleID>11</TaxRuleID>
+                    <TaxRateSeqNbr>913</TaxRateSeqNbr>
+                </Tax>
+                <Tax TaxRateType="TurnoverTax">
+                    <Amount>1.57</Amount>
+                    <TaxRuleID>11</TaxRuleID>
+                    <TaxRateSeqNbr>905</TaxRateSeqNbr>
+                </Tax>
+            </LineItem>
+            <Total TotalType="GrossPlus">129.39</Total>
+            <Total TotalType="GrossMinus">0.00</Total>
+            <ElapsedTime Type="Ring">14</ElapsedTime>
+            <ElapsedTime Type="Tender">9</ElapsedTime>
+            <ElapsedTime Type="Other">160</ElapsedTime>
+        </RetailTransaction>
+    </Transaction>
+  </POSLog>
+</WalmartPOSLog>

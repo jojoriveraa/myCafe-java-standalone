@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+			<OperatorID>021</OperatorID>
+			<RetailTransaction Version="2.2" TypeCode="Sale">
+				<LineItem>
+					<SequenceNumber>1</SequenceNumber>
+					<Sale EntryMethod="Keyed">
+						<POSIdentity>
+							<POSItemID>2500015000000</POSItemID>
+						</POSIdentity>
+						<ItemID>3800007</ItemID>
+						<MerchandiseHierarchy Level="Department">38</MerchandiseHierarchy>
+						<Description></Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>1.00</UnitCostPrice>
+						<ActualSalesUnitPrice>0.97</ActualSalesUnitPrice>
+						<ExtendedAmount>320.93</ExtendedAmount>
+						<ExtendedAmountIncludingTax>330.86</ExtendedAmountIncludingTax>
+						<Quantity>330.860</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.00</Amount>
+							<Percent>0.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>1</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>6.62</Amount>
+							<Percent>2.12</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>13</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>3.31</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>2</SequenceNumber>
+					<Tender>
+						<Amount>200.00</Amount>
+						<CoPay>
+							<CoPayAmount>200.00</CoPayAmount>
+							<TotalAmount>330.86</TotalAmount>
+						</CoPay>
+					</Tender>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>3</SequenceNumber>
+					<Tender TenderType="Cash">
+						<Amount>130.86</Amount>
+					</Tender>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>4</SequenceNumber>
+					<Tax TaxRateType="Percentage">
+						<Amount>0.00</Amount>
+						<Percent>0.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>1</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="Percentage" ReportType="Informational">
+						<Amount>0.00</Amount>
+						<Percent>0.0</Percent>
+						<TaxRuleID>2</TaxRuleID>
+						<TaxRateSeqNbr>1</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="Percentage">
+						<Amount>6.62</Amount>
+						<Percent>2.12</Percent>
+						<TaxRuleID>4</TaxRuleID>
+						<TaxRateSeqNbr>13</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="Percentage">
+						<Amount>3.31</Amount>
+						<Percent>0.62</Percent>
+						<TaxRuleID>5</TaxRuleID>
+						<TaxRateSeqNbr>10</TaxRateSeqNbr>
+					</Tax>
+				</LineItem>
+				<Total TotalType="GrossPlus">330.86</Total>
+				<Total TotalType="GrossMinus">0.00</Total>
+				<ElapsedTime Type="Ring">6</ElapsedTime>
+				<ElapsedTime Type="Tender">20</ElapsedTime>
+				<ElapsedTime Type="Other">24</ElapsedTime>
+			</RetailTransaction>
+		</Transaction>
+	</POSLog>
+</WalmartPOSLog>

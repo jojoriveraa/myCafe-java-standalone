@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<co:DeptSales xmlns:co="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/WM_POSPDMCashOffice.xsd"
+              xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+              ct:BusinessDate="{BD}" ct:Timestamp="{TS}"
+              ct:StoreNbr="{SN}" ct:CountryCode="{CC}"
+              co:EndofdayIndicator="Y" ct:InterfaceName="DeptSales">
+    <co:SalesDetail co:TotalUPCKeyed="1" co:TotalUPCEntryQty="534.00" co:TotalVoidQty="0.00" co:TotalVoidAmount="234.00" co:TotalRetQty="0.00" co:TotalRetAmount="564.00" co:TotalSalesQty="525.00" co:GrossSales="999.00" co:TotalTransactions="359.00" ct:AccntDeptNbr="1"/>
+    <co:SalesDetail co:TotalUPCKeyed="5" co:TotalUPCEntryQty="2458.00" co:TotalVoidQty="0.00" co:TotalVoidAmount="0.00" co:TotalRetQty="0.00" co:TotalRetAmount="0.00" co:TotalSalesQty="2340.00" co:GrossSales="3.69" co:TotalTransactions="982.00" ct:AccntDeptNbr="2"/>
+    <co:SalesDetail co:TotalUPCKeyed="16" co:TotalUPCEntryQty="732.00" co:TotalVoidQty="0.00" co:TotalVoidAmount="0.00" co:TotalRetQty="0.00" co:TotalRetAmount="0.00" co:TotalSalesQty="732.00" co:GrossSales="45.67" co:TotalTransactions="324.00" ct:AccntDeptNbr="3"/>
+</co:DeptSales>

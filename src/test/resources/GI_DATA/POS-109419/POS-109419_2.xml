@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rs:RegisterSales xmlns:rs="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/WM_POS_PDMRegisterSales.xsd"
+                  xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+                  ct:BusinessDate="{BD}" ct:Timestamp="{TS}" ct:InterfaceName="RegisterSales" ct:StoreNbr="{SN}" ct:CountryCode="{CC}">
+    <rs:RegisterSalesDetails rs:CustomersTotal="157" rs:RoundingTotalAmt="0.20" rs:TotalOtherIncome="30.12" rs:TotalTaxRefunded="10.11" rs:NonTaxableSales="12.13" rs:CashSales="15.16" rs:GrossSales="123.00" rs:TotalDiscounts="-1.12" rs:TotalRefunds="0.45" rs:TotalVoids="3.78" ct:RegisterNbr="0" rs:OperatorNbr="1">
+        <rs:TaxCollected TaxAmount="1.00" ct:TaxCodeId="1"/>
+        <rs:TaxCollected TaxAmount="2.00" ct:TaxCodeId="2"/>
+        <rs:TaxCollected TaxAmount="3.00" ct:TaxCodeId="3"/>
+        <rs:TaxCollected TaxAmount="4.00" ct:TaxCodeId="4"/>
+        <rs:TaxCollected TaxAmount="-5.00" ct:TaxCodeId="5"/>
+    </rs:RegisterSalesDetails>
+    <rs:RegisterSalesDetails rs:CustomersTotal="157" rs:RoundingTotalAmt="0.20" rs:TotalOtherIncome="30.12" rs:TotalTaxRefunded="10.11" rs:NonTaxableSales="12.13" rs:CashSales="15.16" rs:GrossSales="123.00" rs:TotalDiscounts="-1.12" rs:TotalRefunds="0.45" rs:TotalVoids="3.78" ct:RegisterNbr="1" rs:OperatorNbr="1">
+        <rs:TaxCollected TaxAmount="1.00" ct:TaxCodeId="1"/>
+        <rs:TaxCollected TaxAmount="2.00" ct:TaxCodeId="2"/>
+        <rs:TaxCollected TaxAmount="3.00" ct:TaxCodeId="3"/>
+        <rs:TaxCollected TaxAmount="4.00" ct:TaxCodeId="4"/>
+        <rs:TaxCollected TaxAmount="-5.00" ct:TaxCodeId="5"/>
+    </rs:RegisterSalesDetails>
+    <rs:RegisterSalesDetails rs:CustomersTotal="157" rs:RoundingTotalAmt="20.20" rs:TotalOtherIncome="-40.34" rs:TotalTaxRefunded="-11.12" rs:NonTaxableSales="-13.14" rs:CashSales="-16.17" rs:GrossSales="-3.69" rs:TotalDiscounts="2.24" rs:TotalRefunds="-4.34" rs:TotalVoids="-3.78" ct:RegisterNbr="0" rs:OperatorNbr="2">
+        <rs:TaxCollected TaxAmount="6.78" ct:TaxCodeId="6"/>
+        <rs:TaxCollected TaxAmount="7.00" ct:TaxCodeId="7"/>
+        <rs:TaxCollected TaxAmount="-8.90" ct:TaxCodeId="8"/>
+        <rs:TaxCollected TaxAmount="9.00" ct:TaxCodeId="9"/>
+        <rs:TaxCollected TaxAmount="10.00" ct:TaxCodeId="10"/>
+    </rs:RegisterSalesDetails>
+    <rs:RegisterSalesDetails rs:CustomersTotal="157" rs:RoundingTotalAmt="20.20" rs:TotalOtherIncome="-40.34" rs:TotalTaxRefunded="-11.12" rs:NonTaxableSales="-13.14" rs:CashSales="-16.17" rs:GrossSales="-3.69" rs:TotalDiscounts="2.24" rs:TotalRefunds="-4.34" rs:TotalVoids="-3.78" ct:RegisterNbr="2" rs:OperatorNbr="2">
+        <rs:TaxCollected TaxAmount="6.78" ct:TaxCodeId="6"/>
+        <rs:TaxCollected TaxAmount="7.00" ct:TaxCodeId="7"/>
+        <rs:TaxCollected TaxAmount="-8.90" ct:TaxCodeId="8"/>
+        <rs:TaxCollected TaxAmount="9.00" ct:TaxCodeId="9"/>
+        <rs:TaxCollected TaxAmount="10.00" ct:TaxCodeId="10"/>
+    </rs:RegisterSalesDetails>
+    <rs:RegisterSalesDetails rs:CustomersTotal="49" rs:RoundingTotalAmt="-1.00" rs:TotalOtherIncome="0.00" rs:TotalTaxRefunded="0.00" rs:NonTaxableSales="0.00" rs:CashSales="0.00" rs:GrossSales="435.67" rs:TotalDiscounts="0.00" rs:TotalRefunds="0.00" rs:TotalVoids="0.00" ct:RegisterNbr="0" rs:OperatorNbr="3">
+        <rs:TaxCollected TaxAmount="11.00" ct:TaxCodeId="11"/>
+        <rs:TaxCollected TaxAmount="12.00" ct:TaxCodeId="12"/>
+    </rs:RegisterSalesDetails>
+    <rs:RegisterSalesDetails rs:CustomersTotal="49" rs:RoundingTotalAmt="-1.00" rs:TotalOtherIncome="0.00" rs:TotalTaxRefunded="0.00" rs:NonTaxableSales="0.00" rs:CashSales="0.00" rs:GrossSales="435.67" rs:TotalDiscounts="0.00" rs:TotalRefunds="0.00" rs:TotalVoids="0.00" ct:RegisterNbr="3" rs:OperatorNbr="3">
+        <rs:TaxCollected TaxAmount="11.00" ct:TaxCodeId="11"/>
+        <rs:TaxCollected TaxAmount="12.00" ct:TaxCodeId="12"/>
+    </rs:RegisterSalesDetails>
+</rs:RegisterSales>

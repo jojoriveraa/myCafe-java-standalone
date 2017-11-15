@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+			   xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+			   ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+	<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+		<Transaction>
+			<CountryCode>{CC}</CountryCode>
+			<WorkstationID>{WS}</WorkstationID>
+			<SequenceNumber>{SQN}</SequenceNumber>
+			<EndDateTime>{EDT}</EndDateTime>
+			<OperatorID>020</OperatorID>
+			<RetailTransaction Version="2.2" TypeCode="Sale">
+				<LineItem>
+					<SequenceNumber>1</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7794000598870</POSItemID>
+						</POSIdentity>
+						<ItemID>9267909</ItemID>
+						<MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+						<Description>KNORR PIZZA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>6.42</UnitCostPrice>
+						<ActualSalesUnitPrice>9.10</ActualSalesUnitPrice>
+						<ExtendedAmount>9.10</ExtendedAmount>
+						<ExtendedAmountIncludingTax>11.50</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>1.99</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.35</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.06</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>2</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7794000598870</POSItemID>
+						</POSIdentity>
+						<ItemID>9267909</ItemID>
+						<MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+						<Description>KNORR PIZZA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>6.42</UnitCostPrice>
+						<ActualSalesUnitPrice>9.10</ActualSalesUnitPrice>
+						<ExtendedAmount>9.10</ExtendedAmount>
+						<ExtendedAmountIncludingTax>11.50</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>1.99</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.35</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.06</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>3</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7794000598870</POSItemID>
+						</POSIdentity>
+						<ItemID>9267909</ItemID>
+						<MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+						<Description>KNORR PIZZA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>6.42</UnitCostPrice>
+						<ActualSalesUnitPrice>9.10</ActualSalesUnitPrice>
+						<ExtendedAmount>9.10</ExtendedAmount>
+						<ExtendedAmountIncludingTax>11.50</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>1.99</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.35</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.06</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>4</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7794000598870</POSItemID>
+						</POSIdentity>
+						<ItemID>9267909</ItemID>
+						<MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+						<Description>KNORR PIZZA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>6.42</UnitCostPrice>
+						<ActualSalesUnitPrice>9.10</ActualSalesUnitPrice>
+						<ExtendedAmount>9.10</ExtendedAmount>
+						<ExtendedAmountIncludingTax>11.50</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>1.99</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.35</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.06</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>5</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7794000598870</POSItemID>
+						</POSIdentity>
+						<ItemID>9267909</ItemID>
+						<MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+						<Description>KNORR PIZZA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>6.42</UnitCostPrice>
+						<ActualSalesUnitPrice>9.10</ActualSalesUnitPrice>
+						<ExtendedAmount>9.10</ExtendedAmount>
+						<ExtendedAmountIncludingTax>11.50</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>1.99</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.35</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.06</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>6</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7794000598870</POSItemID>
+						</POSIdentity>
+						<ItemID>9267909</ItemID>
+						<MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+						<Description>KNORR PIZZA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>6.42</UnitCostPrice>
+						<ActualSalesUnitPrice>9.10</ActualSalesUnitPrice>
+						<ExtendedAmount>9.10</ExtendedAmount>
+						<ExtendedAmountIncludingTax>11.50</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>1.99</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.35</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.06</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>7</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7794000598870</POSItemID>
+						</POSIdentity>
+						<ItemID>9267909</ItemID>
+						<MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+						<Description>KNORR PIZZA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>6.42</UnitCostPrice>
+						<ActualSalesUnitPrice>9.10</ActualSalesUnitPrice>
+						<ExtendedAmount>9.10</ExtendedAmount>
+						<ExtendedAmountIncludingTax>11.50</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>1.99</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.35</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.06</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>8</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7790040931300</POSItemID>
+						</POSIdentity>
+						<ItemID>111657</ItemID>
+						<MerchandiseHierarchy Level="Department">1</MerchandiseHierarchy>
+						<Description>SONRISAS FRA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>13.76</UnitCostPrice>
+						<ActualSalesUnitPrice>18.43</ActualSalesUnitPrice>
+						<ExtendedAmount>18.43</ExtendedAmount>
+						<ExtendedAmountIncludingTax>23.30</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>4.04</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.71</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.12</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>9</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7790040931300</POSItemID>
+						</POSIdentity>
+						<ItemID>111657</ItemID>
+						<MerchandiseHierarchy Level="Department">1</MerchandiseHierarchy>
+						<Description>SONRISAS FRA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>13.76</UnitCostPrice>
+						<ActualSalesUnitPrice>18.43</ActualSalesUnitPrice>
+						<ExtendedAmount>18.43</ExtendedAmount>
+						<ExtendedAmountIncludingTax>23.30</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>4.04</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.71</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.12</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>10</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7790040931300</POSItemID>
+						</POSIdentity>
+						<ItemID>111657</ItemID>
+						<MerchandiseHierarchy Level="Department">1</MerchandiseHierarchy>
+						<Description>SONRISAS FRA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>13.76</UnitCostPrice>
+						<ActualSalesUnitPrice>18.43</ActualSalesUnitPrice>
+						<ExtendedAmount>18.43</ExtendedAmount>
+						<ExtendedAmountIncludingTax>23.30</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>4.04</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.71</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.12</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>11</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7790040931300</POSItemID>
+						</POSIdentity>
+						<ItemID>111657</ItemID>
+						<MerchandiseHierarchy Level="Department">1</MerchandiseHierarchy>
+						<Description>SONRISAS FRA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>13.76</UnitCostPrice>
+						<ActualSalesUnitPrice>18.43</ActualSalesUnitPrice>
+						<ExtendedAmount>18.43</ExtendedAmount>
+						<ExtendedAmountIncludingTax>23.30</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>4.04</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.71</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.12</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>12</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7790040931300</POSItemID>
+						</POSIdentity>
+						<ItemID>111657</ItemID>
+						<MerchandiseHierarchy Level="Department">1</MerchandiseHierarchy>
+						<Description>SONRISAS FRA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>13.76</UnitCostPrice>
+						<ActualSalesUnitPrice>18.43</ActualSalesUnitPrice>
+						<ExtendedAmount>18.43</ExtendedAmount>
+						<ExtendedAmountIncludingTax>23.30</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>4.04</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.71</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>0.12</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>13</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>71220</POSItemID>
+						</POSIdentity>
+						<ItemID>6800217</ItemID>
+						<MerchandiseHierarchy Level="Department">68</MerchandiseHierarchy>
+						<Description>REDONDEO IVA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<ActualSalesUnitPrice>-0.06</ActualSalesUnitPrice>
+						<ExtendedAmount>0</ExtendedAmount>
+						<ExtendedAmountIncludingTax>-0.01</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>-0.01</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<OtherIncomeFlag>true</OtherIncomeFlag>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>14</SequenceNumber>
+					<Tender TenderType="Cash">
+						<Amount>243.18</Amount>
+					</Tender>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>15</SequenceNumber>
+					<Tax TaxRateType="Percentage">
+						<Amount>34.18</Amount>
+						<Percent>21.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="Percentage">
+						<Amount>6.00</Amount>
+						<Percent>3.67</Percent>
+						<TaxRuleID>4</TaxRuleID>
+						<TaxRateSeqNbr>12</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="Percentage">
+						<Amount>1.02</Amount>
+						<Percent>0.62</Percent>
+						<TaxRuleID>5</TaxRuleID>
+						<TaxRateSeqNbr>10</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="TurnoverTax">
+						<Amount>9.85</Amount>
+						<TaxRuleID>11</TaxRuleID>
+						<TaxRateSeqNbr>924</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="TurnoverTax">
+						<Amount>13.03</Amount>
+						<TaxRuleID>11</TaxRuleID>
+						<TaxRateSeqNbr>902</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="TurnoverTax">
+						<Amount>8.14</Amount>
+						<TaxRuleID>11</TaxRuleID>
+						<TaxRateSeqNbr>919</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="TurnoverTax">
+						<Amount>4.07</Amount>
+						<TaxRuleID>11</TaxRuleID>
+						<TaxRateSeqNbr>903</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="TurnoverTax">
+						<Amount>8.14</Amount>
+						<TaxRuleID>11</TaxRuleID>
+						<TaxRateSeqNbr>913</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="TurnoverTax">
+						<Amount>2.96</Amount>
+						<TaxRuleID>11</TaxRuleID>
+						<TaxRateSeqNbr>905</TaxRateSeqNbr>
+					</Tax>
+				</LineItem>
+				<Total TotalType="GrossPlus">243.18</Total>
+				<Total TotalType="GrossMinus">0.00</Total>
+				<ElapsedTime Type="Ring">18</ElapsedTime>
+				<ElapsedTime Type="Tender">8</ElapsedTime>
+				<ElapsedTime Type="Other">3781</ElapsedTime>
+			</RetailTransaction>
+		</Transaction>
+	</POSLog>
+</WalmartPOSLog>

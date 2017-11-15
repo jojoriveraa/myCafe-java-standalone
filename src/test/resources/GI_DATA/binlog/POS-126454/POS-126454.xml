@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+      <OperatorID>018</OperatorID>
+      <RetailTransaction Version="2.2" TypeCode="Sale">
+        <LineItem>
+          <SequenceNumber>2</SequenceNumber>
+          <Sale EntryMethod="Scanned">
+            <POSIdentity>
+              <POSItemID>7790040999466</POSItemID>
+            </POSIdentity>
+            <ItemID>175648</ItemID>
+            <MerchandiseHierarchy Level="Department">1</MerchandiseHierarchy>
+            <Description>SALVADO FIBR</Description>
+            <TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+            <UnitCostPrice>15.80</UnitCostPrice>
+            <ActualSalesUnitPrice>17.51</ActualSalesUnitPrice>
+            <ExtendedAmount>17.51</ExtendedAmount>
+            <ExtendedAmountIncludingTax>19.50</ExtendedAmountIncludingTax>
+            <Quantity>1.000</Quantity>
+            <Tax TaxRateType="Percentage">
+              <Amount>11.65</Amount>
+              <Percent>21.0</Percent>
+              <TaxRuleID>1</TaxRuleID>
+              <TaxRateSeqNbr>2</TaxRateSeqNbr>
+            </Tax>
+            <Tax TaxRateType="Percentage">
+              <Amount>0.29</Amount>
+              <Percent>3.67</Percent>
+              <TaxRuleID>4</TaxRuleID>
+              <TaxRateSeqNbr>12</TaxRateSeqNbr>
+            </Tax>
+            <Tax TaxRateType="Percentage">
+              <Amount>0.05</Amount>
+              <Percent>0.62</Percent>
+              <TaxRuleID>5</TaxRuleID>
+              <TaxRateSeqNbr>10</TaxRateSeqNbr>
+            </Tax>
+            <InterestFreeFlag>true</InterestFreeFlag>
+            <ImportType>Acquired</ImportType>
+          </Sale>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>3</SequenceNumber>
+          <Tender TenderType="CreditDebit">
+            <Amount>19.50</Amount>
+            <Authorization>
+              <AuthorizationCode>00497465</AuthorizationCode>
+              <ReferenceNumber>615700067374</ReferenceNumber>
+              <AuthorizationDateTime>2012-02-16T20:11:04</AuthorizationDateTime>
+              <AuthorizationDescription>14-Phonecard</AuthorizationDescription>
+              <DiagnosticCode>1-Approved</DiagnosticCode>
+            </Authorization>
+            <CreditDebit CardType="Credit" TypeCode="Visa">
+              <PrimaryAccountNumber />
+              <PartialAccountNumber>0001</PartialAccountNumber>
+            </CreditDebit>
+          </Tender>
+        </LineItem>
+        <LineItem>
+          <SequenceNumber>4</SequenceNumber>
+          <Tax TaxRateType="Percentage">
+            <Amount>1.65</Amount>
+            <Percent>21.0</Percent>
+            <TaxRuleID>1</TaxRuleID>
+            <TaxRateSeqNbr>2</TaxRateSeqNbr>
+          </Tax>
+          <Tax TaxRateType="Percentage">
+            <Amount>0.29</Amount>
+            <Percent>3.67</Percent>
+            <TaxRuleID>4</TaxRuleID>
+            <TaxRateSeqNbr>12</TaxRateSeqNbr>
+          </Tax>
+          <Tax TaxRateType="Percentage">
+            <Amount>0.05</Amount>
+            <Percent>0.62</Percent>
+            <TaxRuleID>5</TaxRuleID>
+            <TaxRateSeqNbr>10</TaxRateSeqNbr>
+          </Tax>
+        </LineItem>
+        <Total TotalType="GrossPlus">19.50</Total>
+        <Total TotalType="GrossMinus">0.00</Total>
+        <ElapsedTime Type="Ring">2</ElapsedTime>
+        <ElapsedTime Type="Tender">6</ElapsedTime>
+        <ElapsedTime Type="Other">3</ElapsedTime>
+      </RetailTransaction>
+    </Transaction>
+  </POSLog>
+</WalmartPOSLog>

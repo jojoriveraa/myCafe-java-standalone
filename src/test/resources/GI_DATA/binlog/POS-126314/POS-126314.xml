@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+			<OperatorID>021</OperatorID>
+					<RetailTransaction Version="2.2" TypeCode="Sale">
+			<LineItem>
+				<SequenceNumber>1</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>7591073000010</POSItemID>
+					</POSIdentity>
+					<ItemID>106375</ItemID>
+					<MerchandiseHierarchy Level="Department">96</MerchandiseHierarchy>
+					<Description>RON CACIQUE</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>2923.00</UnitCostPrice>
+					<ActualSalesUnitPrice>4193.00</ActualSalesUnitPrice>
+					<ExtendedAmount>4193.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>4990.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+						<SequenceNumber>1</SequenceNumber>
+						<PreviousPrice>3418.00</PreviousPrice>
+						<ReasonCode>AutomotiveAdjustment</ReasonCode>
+					</RetailPriceModifier>
+					<Tax TaxRateType="Percentage">
+						<Amount>797.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>2</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>7801610350420</POSItemID>
+					</POSIdentity>
+					<ItemID>101943</ItemID>
+					<MerchandiseHierarchy Level="Department">95</MerchandiseHierarchy>
+					<Description>COCA COLA ZE</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>432.00</UnitCostPrice>
+					<ActualSalesUnitPrice>545.00</ActualSalesUnitPrice>
+					<ExtendedAmount>545.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>649.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+						<SequenceNumber>1</SequenceNumber>
+						<PreviousPrice>492.00</PreviousPrice>
+						<ReasonCode>AutomotiveAdjustment</ReasonCode>
+					</RetailPriceModifier>
+					<Tax TaxRateType="Percentage">
+						<Amount>104.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>3</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>7802110001220</POSItemID>
+					</POSIdentity>
+					<ItemID>100677</ItemID>
+					<MerchandiseHierarchy Level="Department">96</MerchandiseHierarchy>
+					<Description>TOFFE CREAM</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>1766.00</UnitCostPrice>
+					<ActualSalesUnitPrice>2352.00</ActualSalesUnitPrice>
+					<ExtendedAmount>2352.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>2799.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+						<SequenceNumber>1</SequenceNumber>
+						<PreviousPrice>1917.00</PreviousPrice>
+						<ReasonCode>AutomotiveAdjustment</ReasonCode>
+					</RetailPriceModifier>
+					<Tax TaxRateType="Percentage">
+						<Amount>447.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>4</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>7804300123440</POSItemID>
+					</POSIdentity>
+					<ItemID>100664</ItemID>
+					<MerchandiseHierarchy Level="Department">96</MerchandiseHierarchy>
+					<Description>CERVEZA PACK</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>227.00</UnitCostPrice>
+					<ActualSalesUnitPrice>248.00</ActualSalesUnitPrice>
+					<ExtendedAmount>248.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>295.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+						<SequenceNumber>1</SequenceNumber>
+						<PreviousPrice>220.00</PreviousPrice>
+						<ReasonCode>AutomotiveAdjustment</ReasonCode>
+					</RetailPriceModifier>
+					<Tax TaxRateType="Percentage">
+						<Amount>47.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>5</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>75032710</POSItemID>
+					</POSIdentity>
+					<ItemID>106650</ItemID>
+					<MerchandiseHierarchy Level="Department">96</MerchandiseHierarchy>
+					<Description>CERVEZA</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>473.00</UnitCostPrice>
+					<ActualSalesUnitPrice>580.00</ActualSalesUnitPrice>
+					<ExtendedAmount>580.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>690.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+						<SequenceNumber>1</SequenceNumber>
+						<PreviousPrice>515.00</PreviousPrice>
+						<ReasonCode>AutomotiveAdjustment</ReasonCode>
+					</RetailPriceModifier>
+					<Tax TaxRateType="Percentage">
+						<Amount>110.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>6</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>7501054835160</POSItemID>
+					</POSIdentity>
+					<ItemID>100697</ItemID>
+					<MerchandiseHierarchy Level="Department">96</MerchandiseHierarchy>
+					<Description>TEQUILA</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>3343.00</UnitCostPrice>
+					<ActualSalesUnitPrice>3353.00</ActualSalesUnitPrice>
+					<ExtendedAmount>3353.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>3990.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+						<SequenceNumber>1</SequenceNumber>
+						<PreviousPrice>2733.00</PreviousPrice>
+						<ReasonCode>AutomotiveAdjustment</ReasonCode>
+					</RetailPriceModifier>
+					<Tax TaxRateType="Percentage">
+						<Amount>637.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>7</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>7805000115890</POSItemID>
+					</POSIdentity>
+					<ItemID>330898</ItemID>
+					<MerchandiseHierarchy Level="Department">13</MerchandiseHierarchy>
+					<Description>LAVALOZ.QUIX</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>628.00</UnitCostPrice>
+					<ActualSalesUnitPrice>748.00</ActualSalesUnitPrice>
+					<ExtendedAmount>748.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>890.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<Tax TaxRateType="Percentage">
+						<Amount>142.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>8</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>7802110001050</POSItemID>
+					</POSIdentity>
+					<ItemID>344604</ItemID>
+					<MerchandiseHierarchy Level="Department">96</MerchandiseHierarchy>
+					<Description>COCTEL MANGO</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>1784.00</UnitCostPrice>
+					<ActualSalesUnitPrice>2681.00</ActualSalesUnitPrice>
+					<ExtendedAmount>2681.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>3190.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+						<SequenceNumber>1</SequenceNumber>
+						<PreviousPrice>2185.00</PreviousPrice>
+						<ReasonCode>AutomotiveAdjustment</ReasonCode>
+					</RetailPriceModifier>
+					<Tax TaxRateType="Percentage">
+						<Amount>509.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>9</SequenceNumber>
+				<Sale EntryMethod="Scanned">
+					<POSIdentity>
+						<POSItemID>7808737700020</POSItemID>
+					</POSIdentity>
+					<ItemID>101025</ItemID>
+					<MerchandiseHierarchy Level="Department">83</MerchandiseHierarchy>
+					<Description>SALMON FILET</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>2050.00</UnitCostPrice>
+					<ActualSalesUnitPrice>3353.00</ActualSalesUnitPrice>
+					<ExtendedAmount>3353.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>3990.00</ExtendedAmountIncludingTax>
+					<Quantity>1.000</Quantity>
+					<Tax TaxRateType="Percentage">
+						<Amount>637.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>10</SequenceNumber>
+				<Tender TenderType="Check" EntryMethod="Keyed">
+					<Amount>21483.00</Amount>
+					<Authorization HostResponseTime="1373">
+							<AuthorizationCode>B46346</AuthorizationCode>
+							<ReferenceNumber>615700067374</ReferenceNumber>
+							<AuthorizationDateTime>{EDT}</AuthorizationDateTime>
+							<AuthorizationDescription>16-Giftcard</AuthorizationDescription>
+							<DiagnosticCode>1-Approved</DiagnosticCode>
+							<RequestedAmount>21483.00</RequestedAmount>
+						</Authorization>
+					<Check TypeCode="Personal">
+						<BankID>111</BankID>
+						<CheckNumber>4444444</CheckNumber>
+						<AccountNumber>33333333333</AccountNumber>
+					</Check>
+				</Tender>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>11</SequenceNumber>
+				<Tax TaxRateType="Percentage">
+					<Amount>3430.00</Amount>
+					<Percent>19.0</Percent>
+					<TaxRuleID>1</TaxRuleID>
+					<TaxRateSeqNbr>2</TaxRateSeqNbr>
+				</Tax>
+			</LineItem>
+			<Total TotalType="GrossPlus">21483.00</Total>
+			<Total TotalType="GrossMinus">0.00</Total>
+			<ElapsedTime Type="Ring">343</ElapsedTime>
+			<ElapsedTime Type="Tender">50</ElapsedTime>
+			<ElapsedTime Type="Other">158</ElapsedTime>
+		</RetailTransaction>
+	</Transaction>
+</POSLog>
+</WalmartPOSLog>

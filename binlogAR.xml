@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite">
+	<test name="Suite_One_Test1" >
+		<parameter name="storeNumber" value="000005571" />
+		<parameter name="countryCode" value="AR" />
+
+		<groups>
+			<run>
+				<include name="RT" />
+				<exclude name="AR" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.automation.gi.tests.binlog.ar.AR_BinlogTest" />
+		</classes>
+	</test>
+
+</suite>

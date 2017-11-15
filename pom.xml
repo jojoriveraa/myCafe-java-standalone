@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>walmart-automation</groupId>
+	<artifactId>walmart-gi-automation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<jdk.target>1.8</jdk.target>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.walmart.pos.wits</groupId>
+			<artifactId>wits-data-formats</artifactId>
+			<version>0.0.31.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.test.automation</groupId>
+			<artifactId>cerberus-middleware</artifactId>
+			<version>1.0-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-simple</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- <dependency> <groupId>com.test.automation</groupId> <artifactId>cerberus-middleware-core</artifactId> 
+			<version>0.0.1-SNAPSHOT</version> <scope>compile</scope> </dependency> -->
+	</dependencies>
+	<build>
+		<plugins>
+			<!-- Set a JDK compiler level -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${jdk.target}</source>
+					<target>${jdk.target}</target>
+				</configuration>
+			</plugin>
+			<!--Plugin to run the tests -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+		<testResources>
+			<testResource>
+				<directory>src/test/resources</directory>
+				<filtering>true</filtering>
+			</testResource>
+		</testResources>
+	</build>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rs:RegisterSales xmlns:rs="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/WM_POS_PDMRegisterSales.xsd"
+                  xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+
+                  ct:BusinessDate="{BD}" ct:Timestamp="{TS}" ct:ReprocessRequest="false" ct:InterfaceName="SalesAndTaxAmount" ct:StoreNbr="{SN}" ct:CountryCode="{CC}">
+
+    <rs:RegisterSalesDetails ct:RegisterNbr="14">
+        <rs:TaxCollected TaxAmount="300000.00" SalesAmount="342.00"
+                         ct:TaxPct="19.00" ct:RateGroupId="2" ct:TaxCodeId="1"/>
+        <rs:TaxCollected TaxAmount="0.00" SalesAmount="3205.00" ct:TaxPct="0.00"
+                         ct:RateGroupId="1" ct:TaxCodeId="1"/>
+    </rs:RegisterSalesDetails>
+</rs:RegisterSales>

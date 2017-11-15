@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+			<OperatorID>021</OperatorID>
+			<RetailTransaction Version="2.2" TypeCode="Return">
+				<LineItem>
+					<SequenceNumber>1</SequenceNumber>
+					<Return EntryMethod="Keyed">
+						<POSIdentity>
+							<POSItemID>7790742163500</POSItemID>
+						</POSIdentity>
+						<ItemID>9075650</ItemID>
+						<MerchandiseHierarchy Level="Department">90	</MerchandiseHierarchy>
+						<Description>FIN LIG V AD</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>19.58</UnitCostPrice>
+						<ActualSalesUnitPrice>-26.10</ActualSalesUnitPrice>
+						<ExtendedAmount>-26.10</ExtendedAmount>
+						<ExtendedAmountIncludingTax>-33.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>-5.73</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>-1.00</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>-0.17</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+						<Reason>Defective</Reason>
+					</Return>
+
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>2</SequenceNumber>
+					<Return EntryMethod="Keyed">
+						<POSIdentity>
+							<POSItemID>7790742163500</POSItemID>
+						</POSIdentity>
+						<ItemID>9075650</ItemID>
+						<MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+						<Description>FIN LIG V AD</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>19.58</UnitCostPrice>
+						<ActualSalesUnitPrice>-26.10</ActualSalesUnitPrice>
+						<ExtendedAmount>-26.10</ExtendedAmount>
+						<ExtendedAmountIncludingTax>-33.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<Tax TaxRateType="Percentage">
+							<Amount>-5.73</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>-1.00</Amount>
+							<Percent>3.67</Percent>
+							<TaxRuleID>4</TaxRuleID>
+							<TaxRateSeqNbr>12</TaxRateSeqNbr>
+						</Tax>
+						<Tax TaxRateType="Percentage">
+							<Amount>-0.17</Amount>
+							<Percent>0.62</Percent>
+							<TaxRuleID>5</TaxRuleID>
+							<TaxRateSeqNbr>10</TaxRateSeqNbr>
+						</Tax>
+					</Return>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>2</SequenceNumber>
+					<Tender TenderType="CreditDebit" EntryMethod="IntegratedChip">
+						<TenderTokenID>90810003003820111206102530</TenderTokenID>
+						<Amount>-33.00</Amount>
+						<Authorization HostResponseTime="1373">
+							<AuthorizationCode>802088 B</AuthorizationCode>
+							<ReferenceNumber>615700067374</ReferenceNumber>
+							<AuthorizationDateTime>2012-02-16T20:11:04</AuthorizationDateTime>
+							<AuthorizationDescription>17-RefundWTcnbr</AuthorizationDescription>
+							<DiagnosticCode>1-Approved</DiagnosticCode>
+							<RequestedAmount>-33.00</RequestedAmount>
+						</Authorization>
+						<CreditDebit CardType="Debit">
+							<PrimaryAccountNumber />
+							<PartialAccountNumber>1234</PartialAccountNumber>
+						</CreditDebit>
+					</Tender>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>3</SequenceNumber>
+					<Tax TaxRateType="Percentage">
+						<Amount>-5.73</Amount>
+						<Percent>21.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="Percentage">
+						<Amount>-1.00</Amount>
+						<Percent>3.67</Percent>
+						<TaxRuleID>4</TaxRuleID>
+						<TaxRateSeqNbr>12</TaxRateSeqNbr>
+					</Tax>
+					<Tax TaxRateType="Percentage">
+						<Amount>-0.17</Amount>
+						<Percent>0.62</Percent>
+						<TaxRuleID>5</TaxRuleID>
+						<TaxRateSeqNbr>10</TaxRateSeqNbr>
+					</Tax>
+				</LineItem>
+				<Total TotalType="GrossPlus">9440.00</Total>
+				<Total TotalType="GrossMinus">0.00</Total>
+				<ElapsedTime Type="Ring">22</ElapsedTime>
+				<ElapsedTime Type="Tender">11</ElapsedTime>
+				<ElapsedTime Type="Other">98</ElapsedTime>
+			</RetailTransaction>
+		</Transaction>
+	</POSLog>
+</WalmartPOSLog>

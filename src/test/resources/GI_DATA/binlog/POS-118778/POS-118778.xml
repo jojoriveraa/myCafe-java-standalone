@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+			   xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+			   ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+	<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+		<Transaction>
+			<CountryCode>{CC}</CountryCode>
+			<WorkstationID>{WS}</WorkstationID>
+			<SequenceNumber>{SQN}</SequenceNumber>
+			<EndDateTime>{EDT}</EndDateTime>
+			<OperatorID>21</OperatorID>
+			<RetailTransaction Version="2.2" TypeCode="Sale">
+				<LineItem>
+					<SequenceNumber>1</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>78032210</POSItemID>
+						</POSIdentity>
+						<ItemID>271616</ItemID>
+						<MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+						<Description>LECHE ASADA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>292.00</UnitCostPrice>
+						<ActualSalesUnitPrice>293.00</ActualSalesUnitPrice>
+						<ExtendedAmount>293.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>349.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+							<SequenceNumber>1</SequenceNumber>
+							<Amount Action="Subtract">42.00</Amount>
+							<PreviousPrice>335.00</PreviousPrice>
+							<NewPrice>293.00</NewPrice>
+							<ReasonCode>PricingError</ReasonCode>
+						</RetailPriceModifier>
+						<Tax TaxRateType="Percentage">
+							<Amount>56.00</Amount>
+							<Percent>19.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>2</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>78032210</POSItemID>
+						</POSIdentity>
+						<ItemID>271616</ItemID>
+						<MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+						<Description>LECHE ASADA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>292.00</UnitCostPrice>
+						<ActualSalesUnitPrice>293.00</ActualSalesUnitPrice>
+						<ExtendedAmount>293.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>349.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+							<SequenceNumber>1</SequenceNumber>
+							<Amount Action="Subtract">42.00</Amount>
+							<PreviousPrice>335.00</PreviousPrice>
+							<NewPrice>293.00</NewPrice>
+							<ReasonCode>AutomotiveAdjustment</ReasonCode>
+						</RetailPriceModifier>
+						<Tax TaxRateType="Percentage">
+							<Amount>56.00</Amount>
+							<Percent>19.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>3</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>78032210</POSItemID>
+						</POSIdentity>
+						<ItemID>271616</ItemID>
+						<MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+						<Description>LECHE ASADA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>292.00</UnitCostPrice>
+						<ActualSalesUnitPrice>293.00</ActualSalesUnitPrice>
+						<ExtendedAmount>293.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>349.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+							<SequenceNumber>1</SequenceNumber>
+							<Amount Action="Subtract">42.00</Amount>
+							<PreviousPrice>335.00</PreviousPrice>
+							<NewPrice>293.00</NewPrice>
+							<ReasonCode>CompetitionAdvertisement</ReasonCode>
+						</RetailPriceModifier>
+						<Tax TaxRateType="Percentage">
+							<Amount>56.00</Amount>
+							<Percent>19.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>4</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>78032210</POSItemID>
+						</POSIdentity>
+						<ItemID>271616</ItemID>
+						<MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+						<Description>LECHE ASADA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>292.00</UnitCostPrice>
+						<ActualSalesUnitPrice>293.00</ActualSalesUnitPrice>
+						<ExtendedAmount>293.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>349.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+							<SequenceNumber>1</SequenceNumber>
+							<Amount Action="Subtract">42.00</Amount>
+							<PreviousPrice>335.00</PreviousPrice>
+							<NewPrice>293.00</NewPrice>
+							<ReasonCode>Miscellaneous</ReasonCode>
+						</RetailPriceModifier>
+						<Tax TaxRateType="Percentage">
+							<Amount>56.00</Amount>
+							<Percent>19.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>5</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>78032210</POSItemID>
+						</POSIdentity>
+						<ItemID>271616</ItemID>
+						<MerchandiseHierarchy Level="Department">90</MerchandiseHierarchy>
+						<Description>LECHE ASADA</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>292.00</UnitCostPrice>
+						<ActualSalesUnitPrice>293.00</ActualSalesUnitPrice>
+						<ExtendedAmount>293.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>349.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<RetailPriceModifier DiscountBenefit="CashierPriceOverride">
+							<SequenceNumber>1</SequenceNumber>
+							<Amount Action="Subtract">42.00</Amount>
+							<PreviousPrice>335.00</PreviousPrice>
+							<NewPrice>293.00</NewPrice>
+						</RetailPriceModifier>
+						<Tax TaxRateType="Percentage">
+							<Amount>56.00</Amount>
+							<Percent>19.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>6</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7809604026640</POSItemID>
+						</POSIdentity>
+						<ItemID>496636</ItemID>
+						<MerchandiseHierarchy Level="Department">4</MerchandiseHierarchy>
+						<Description>PAP HIG RM</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>1295.00</UnitCostPrice>
+						<ActualSalesUnitPrice>1256.00</ActualSalesUnitPrice>
+						<ExtendedAmount>1256.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>1495.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<RetailPriceModifier DiscountBenefit="DirectGlobalPromotion">
+							<SequenceNumber>1</SequenceNumber>
+							<Amount Action="Subtract">248.00</Amount>
+							<PreviousPrice>1504.00</PreviousPrice>
+							<NewPrice>1256.00</NewPrice>
+							<PromotionID>4112</PromotionID>
+							<ReasonCode>Promotion</ReasonCode>
+						</RetailPriceModifier>
+						<Tax TaxRateType="Percentage">
+							<Amount>239.00</Amount>
+							<Percent>19.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>7</SequenceNumber>
+					<Sale EntryMethod="Scanned">
+						<POSIdentity>
+							<POSItemID>7798155730410</POSItemID>
+						</POSIdentity>
+						<ItemID>9715541</ItemID>
+						<MerchandiseHierarchy Level="Department">97</MerchandiseHierarchy>
+						<Description>R ALTO SALCH</Description>
+						<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+						<UnitCostPrice>5.00</UnitCostPrice>
+						<ActualSalesUnitPrice>8.00</ActualSalesUnitPrice>
+						<ExtendedAmount>8.00</ExtendedAmount>
+						<ExtendedAmountIncludingTax>11.00</ExtendedAmountIncludingTax>
+						<Quantity>1.000</Quantity>
+						<RetailPriceModifier DiscountBenefit="AssociateDiscount">
+							<SequenceNumber>1</SequenceNumber>
+						</RetailPriceModifier>
+						<Tax TaxRateType="Percentage">
+							<Amount>1.00</Amount>
+							<Percent>21.0</Percent>
+							<TaxRuleID>1</TaxRuleID>
+							<TaxRateSeqNbr>2</TaxRateSeqNbr>
+						</Tax>
+					</Sale>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>8</SequenceNumber>
+					<Discount DiscountBenefit="AssociateDiscount">
+						<Amount>2.00</Amount>
+						<AmountIncludingTax>3.00</AmountIncludingTax>
+					</Discount>
+					<Tax TaxRateType="Percentage">
+						<Amount>-0.00</Amount>
+						<Percent>21.0</Percent>
+						<Reason>Discount</Reason>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>9</SequenceNumber>
+					<Tender TenderType="CreditDebit">
+						<Amount>1855.00</Amount>
+						<Authorization HostResponseTime="1373">
+							<AuthorizationCode>00001509</AuthorizationCode>
+							<ReferenceNumber>615700067374</ReferenceNumber>
+							<AuthorizationDateTime>{EDT}</AuthorizationDateTime>
+							<AuthorizationDescription>2-Mastercard</AuthorizationDescription>
+							<DiagnosticCode>1-Approved</DiagnosticCode>
+							<RequestedAmount>1855.00</RequestedAmount>
+						</Authorization>
+						<CreditDebit CardType="Credit" TypeCode="MasterCard">
+							<PrimaryAccountNumber/>
+							<PartialAccountNumber>0320</PartialAccountNumber>
+						</CreditDebit>
+					</Tender>
+				</LineItem>
+				<LineItem>
+					<SequenceNumber>10</SequenceNumber>
+					<Tax TaxRateType="Percentage">
+						<Amount>294.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</LineItem>
+				<Total TotalType="GrossPlus">1855.00</Total>
+				<Total TotalType="GrossMinus">0.00</Total>
+				<ElapsedTime Type="Ring">310</ElapsedTime>
+				<ElapsedTime Type="Tender">47</ElapsedTime>
+				<ElapsedTime Type="Other">46</ElapsedTime>
+			</RetailTransaction>
+		</Transaction>
+	</POSLog>
+</WalmartPOSLog>

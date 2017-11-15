@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WalmartPOSLog xmlns="http://www.wal-mart.com/ISD/POS/namespace2/"
+               xmlns:ct="http://www.xmlns.walmartstores.com/ISD/PointOfSales/datatypes/1.1/CommonTypes.xsd"
+               ct:CountryCode="{CC}" ct:InterfaceName="WalmartPOSLog" ct:StoreNbr="{SN}" ct:BusinessDate="{BD}" ct:Timestamp="{TS}">
+  <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/">
+    <Transaction>
+      <CountryCode>{CC}</CountryCode>
+      <WorkstationID>{WS}</WorkstationID>
+      <SequenceNumber>{SQN}</SequenceNumber>
+      <EndDateTime>{EDT}</EndDateTime>
+			<OperatorID>315</OperatorID>
+		<RetailTransaction Version="2.2" TypeCode="Sale" TransactionStatus="SuspendedRetrieved">
+			<LineItem>
+				<SequenceNumber>2</SequenceNumber>
+				<Sale EntryMethod="Keyed">
+					<POSIdentity>
+						<POSItemID>7802900030010</POSItemID>
+					</POSIdentity>
+					<ItemID>254295</ItemID>
+					<MerchandiseHierarchy Level="Department">92</MerchandiseHierarchy>
+					<Description>LECHE L/VIDA</Description>
+					<TaxIncludedInPriceFlag>false</TaxIncludedInPriceFlag>
+					<UnitCostPrice>625.00</UnitCostPrice>
+					<ActualSalesUnitPrice>614.00</ActualSalesUnitPrice>
+					<ExtendedAmount>42980.00</ExtendedAmount>
+					<ExtendedAmountIncludingTax>51100.00</ExtendedAmountIncludingTax>
+					<Quantity>70.000</Quantity>
+					<RetailPriceModifier DiscountBenefit="AssociateDiscount">
+						<SequenceNumber>1</SequenceNumber>
+					</RetailPriceModifier>
+					<Tax TaxRateType="Percentage">
+						<Amount>8120.00</Amount>
+						<Percent>19.0</Percent>
+						<TaxRuleID>1</TaxRuleID>
+						<TaxRateSeqNbr>2</TaxRateSeqNbr>
+					</Tax>
+				</Sale>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>3</SequenceNumber>
+				<Tender TenderType="CreditDebit">
+					<Amount>54090.00</Amount>
+					<Authorization>
+						<AuthorizationCode>00001509</AuthorizationCode>
+						<AuthorizationDateTime>2015-04-07T09:03:36</AuthorizationDateTime>
+					</Authorization>
+					<CreditDebit CardType="Debit" TypeCode="MasterCard">
+						<PrimaryAccountNumber/>
+						<PartialAccountNumber>0320</PartialAccountNumber>
+					</CreditDebit>
+				</Tender>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>4</SequenceNumber>
+				<Tax TaxRateType="Percentage">
+					<Amount>8597.00</Amount>
+					<Percent>19.0</Percent>
+					<TaxRuleID>1</TaxRuleID>
+					<TaxRateSeqNbr>2</TaxRateSeqNbr>
+				</Tax>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>5</SequenceNumber>
+				<Discount DiscountBenefit="AssociateDiscount">
+					<Amount>4.53</Amount>
+					<AmountIncludingTax>5.72</AmountIncludingTax>
+				</Discount>
+				<Tax TaxRateType="Percentage">
+					<Amount>-0.97</Amount>
+					<Percent>21.0</Percent>
+					<Reason>Discount</Reason>
+					<TaxRuleID>1</TaxRuleID>
+					<TaxRateSeqNbr>2</TaxRateSeqNbr>
+				</Tax>
+				<Tax TaxRateType="Percentage">
+					<Amount>-0.18</Amount>
+					<Percent>3.67</Percent>
+					<Reason>Discount</Reason>
+					<TaxRuleID>4</TaxRuleID>
+					<TaxRateSeqNbr>12</TaxRateSeqNbr>
+				</Tax>
+				<Tax TaxRateType="Percentage">
+					<Amount>-0.04</Amount>
+					<Percent>0.62</Percent>
+					<Reason>Discount</Reason>
+					<TaxRuleID>5</TaxRuleID>
+					<TaxRateSeqNbr>10</TaxRateSeqNbr>
+				</Tax>
+			</LineItem>
+			<LineItem>
+				<SequenceNumber>8</SequenceNumber>
+				<Discount DiscountBenefit="PaymentCardDiscount" >
+					<Amount>1.03</Amount>
+				</Discount>
+			</LineItem>
+			<Total TotalType="GrossPlus">54090.00</Total>
+			<Total TotalType="GrossMinus">0.00</Total>
+			<ElapsedTime Type="Ring">0</ElapsedTime>
+			<ElapsedTime Type="Tender">2</ElapsedTime>
+			<ElapsedTime Type="Other">112</ElapsedTime>
+		</RetailTransaction>
+	</Transaction>
+  </POSLog>
+</WalmartPOSLog>
