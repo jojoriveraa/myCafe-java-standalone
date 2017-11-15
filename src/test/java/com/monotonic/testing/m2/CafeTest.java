@@ -44,6 +44,20 @@ public class CafeTest {
         cafe.restockMilk(227);
 
         // when
+        cafe.brew(Latte);
+
+        // then
+        assertEquals(0, cafe.getBeansInStock());
+    }
+    
+    @Test
+    public void brewingLatteConsumesMilk() {
+        // given
+        Cafe cafe = new Cafe();
+        cafe.restockBeans(7);
+        cafe.restockMilk(227);
+
+        // when
         Coffee coffee = cafe.brew(Latte);
 
         // then
