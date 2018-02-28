@@ -2,8 +2,8 @@ package com.monotonic.testing.m2;
 
 import org.testng.annotations.Test;
 
-import static com.monotonic.testing.m2.CoffeeType.Espresso;
-import static com.monotonic.testing.m2.CoffeeType.Latte;
+import static com.monotonic.testing.m2.CoffeeType.ESPRESSO;
+import static com.monotonic.testing.m2.CoffeeType.LATTE;
 import static org.junit.Assert.assertEquals;
 
 public class CafeTest {
@@ -15,12 +15,12 @@ public class CafeTest {
         cafe.restockBeans(7);
 
         // when
-        Coffee coffee = cafe.brew(Espresso);
+        Coffee coffee = cafe.brew(ESPRESSO);
 
         // then
         assertEquals(7, coffee.getBeans());
         assertEquals(0, coffee.getMilk());
-        assertEquals(Espresso, coffee.getType());
+        assertEquals(ESPRESSO, coffee.getType());
     }
 
     @Test
@@ -30,7 +30,7 @@ public class CafeTest {
         cafe.restockBeans(7);
 
         // when
-        cafe.brew(Espresso);
+        cafe.brew(ESPRESSO);
 
         // then
         assertEquals(0, cafe.getBeansInStock());
@@ -44,10 +44,10 @@ public class CafeTest {
         cafe.restockMilk(227);
 
         // when
-        Coffee coffee = cafe.brew(Latte);
+        Coffee coffee = cafe.brew(LATTE);
 
         // then
-        assertEquals(Latte, coffee.getType());
+        assertEquals(LATTE, coffee.getType());
     }
     
     @Test
@@ -58,7 +58,7 @@ public class CafeTest {
         cafe.restockMilk(227);
 
         // when
-        cafe.brew(Latte);
+        cafe.brew(LATTE);
 
         // then
         assertEquals(0, cafe.getBeansInStock());
@@ -72,7 +72,7 @@ public class CafeTest {
         cafe.restockMilk(227);
 
         // when
-        cafe.brew(Latte);
+        cafe.brew(LATTE);
 
         // then
         assertEquals(0, cafe.getMilkInStock());
@@ -103,7 +103,7 @@ public class CafeTest {
         cafe.restockBeans(7);
 
         // when
-        cafe.brew(Latte);
+        cafe.brew(LATTE);
     }
 
 }
