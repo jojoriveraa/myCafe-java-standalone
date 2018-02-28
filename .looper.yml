@@ -7,10 +7,6 @@ tools:
     - 3.0.3.778
 
 triggers:
-  push:
-    ignoreMessage:
-    - \[skip\] .*
-    - \[ignore\] .*
 
 flows:
   runsonar:
