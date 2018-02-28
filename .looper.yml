@@ -23,7 +23,7 @@ flows:
 
   build:
    - exposeVars(maven)
-   - (name Maven deploy) mvn -B clean deploy -Dmaven.test.skip=true
+   - (name Maven deploy) mvn -B clean test
    - call: runsonar
      
   hygieiaPublish:
@@ -37,5 +37,4 @@ flows:
           - call: hygieiaPublish
 
   pr:
-   - (name Maven install) mvn -B -U clean install -Dmaven.test.skip=true
-   - call: runsonar
+   - call: default
