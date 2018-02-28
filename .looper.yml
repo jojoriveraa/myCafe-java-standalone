@@ -8,6 +8,7 @@ tools:
 
 triggers:
   push: enabled
+    ignoreMessage: \[ignore\] .*
   pr: enabled
 
 flows:
