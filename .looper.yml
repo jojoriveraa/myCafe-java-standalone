@@ -7,7 +7,8 @@ tools:
     - 3.0.3.778
 
 triggers:
-  push: enabled
+  push: 
+    enabled
     ignoreMessage: \[ignore\] .*
   pr: enabled
 
