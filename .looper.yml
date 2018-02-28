@@ -9,7 +9,7 @@ tools:
 triggers:
   push: enabled
   pr: enabled
-  cron: 0 0 * * *
+  cron: H 0 * * *
 
 flows:
   runsonar:
