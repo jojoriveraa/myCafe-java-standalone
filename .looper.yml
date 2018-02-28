@@ -1,108 +1,41 @@
 tools:
-  jdk: 8
-  maven: 3.5.0
+  jdk:
+    - 8
+  maven:
+    - 3.3.9
+  sonarscanner:
+    - 3.0.3.778
 
-envs:
-  global:
-    variables:
-      wf-name: demo-nineteen
-
-triggers: #unable to get them to work
+triggers:
   push:
-    ignoreMessage: \[ignore\] .*
-    #ignoreAuthor: <author name or email>
-    #ignoreCommitter: <committer name or email>
+    ignoreMessage:
+    - \[skip\] .*
+    - \[ignore\] .*
 
 flows:
+  runsonar:
+    - sonar("Sonar"):
+       - (name sonar) mvn -e -V -B -fae sonar:sonar
+
+  versionsCheck:
+    - (name JDK Version) java -version
+    - (name Maven version) mvn -v
+
+  build:
+   - exposeVars(maven)
+   - (name Maven deploy) mvn -B clean deploy -Dmaven.test.skip=true
+   - call: runsonar
+     
+  hygieiaPublish:
+     - hygieia.publishBuild()
+
   default:
-    - shell: echo "Default Flow"
-    #- call: multi-line-flow
-    #- call: group-flow
-    #- call: defining-flow
-    # - call: docker-build
-    #- call: variable-play
-    #- call: parse-variables
-    - call: test
-    #- call: release
+       try:
+          - call: versionsCheck
+          - call: build
+       finally:
+          - call: hygieiaPublish
 
-  multi-line-flow: |
-    (name multi-line-flow-echos) #indentation is very crucial on this line. Had hard time getting it right
-      echo "hello world"
-      java -version
-      mvn -v
-
-  variable-play:
-    - echo "wf-name=${wf-name}"
-    - var (wf-name = demo-loop)
-    - echo "wf-name=${wf-name}"
-
-  group-flow:
-  - group(Version Checks): #this will execute all the following actions in parallel
-    - java -version
-    - mvn -v
-    - python --version
-
-  defining-flow:
-  - node(linux): #available node types are linux, osx, windows
-    - (name Welcome) echo "Hello World"
-    - shell(name Packaging): mvn -e clean package
-    - shell(name Bye): echo "The End"
-
-  parse-variables:
-    - parallel(failsafe):
-     #- (name Parse JSON) exposeVars(vars.json)
-     #Following variables are supported by GIT Jenkins plugin
-      - echo "GITHUB_PR_TRIGGER_SENDER_AUTHOR=$GITHUB_PR_TRIGGER_SENDER_AUTHOR"
-      - echo "GITHUB_PR_TRIGGER_SENDER_EMAIL=$GITHUB_PR_TRIGGER_SENDER_EMAIL"
-      - echo "GITHUB_PR_COMMIT_AUTHOR_NAME=$GITHUB_PR_COMMIT_AUTHOR_NAME"
-      - echo "GITHUB_PR_COMMIT_AUTHOR_EMAIL=$GITHUB_PR_COMMIT_AUTHOR_EMAIL"
-      - echo "GITHUB_PR_TARGET_BRANCH=$GITHUB_PR_TARGET_BRANCH"
-      - echo "GITHUB_PR_SOURCE_BRANCH=$GITHUB_PR_SOURCE_BRANCH"
-      - echo "GITHUB_PR_AUTHOR_EMAIL=$GITHUB_PR_AUTHOR_EMAIL"
-      - echo "GITHUB_PR_BODY=$GITHUB_PR_BODY"
-      - echo "GITHUB_PR_SHORT_DESC=$GITHUB_PR_SHORT_DESC"
-      - echo "GITHUB_PR_TITLE=$GITHUB_PR_TITLE"
-      - echo "GITHUB_PR_URL=$GITHUB_PR_URL"
-      - echo "GITHUB_PR_HEAD_SHA=$GITHUB_PR_HEAD_SHA"
-      - echo "GITHUB_PR_COND_REF=$GITHUB_PR_COND_REF"
-      - echo "GITHUB_PR_CAUSE_SKIP=$GITHUB_PR_CAUSE_SKIP"
-      - echo "GITHUB_PR_NUMBER=$GITHUB_PR_NUMBER"
-      - echo "GITHUB_PR_STATE=$GITHUB_PR_STATE"
-      - echo "GITHUB_PR_COMMENT_BODY=$GITHUB_PR_COMMENT_BODY"
-      - echo "GITHUB_PR_COMMENT_BODY_MATCH=$GITHUB_PR_COMMENT_BODY_MATCH"
-      - echo "GITHUB_PR_LABELS=$GITHUB_PR_LABELS"
-      - echo "GITHUB_BRANCH_NAME=$GITHUB_BRANCH_NAME"
-      - echo "GITHUB_BRANCH_SHORT_DESC=$GITHUB_BRANCH_SHORT_DESC"
-      - echo "GITHUB_BRANCH_TITLE=$GITHUB_BRANCH_TITLE"
-      - echo "GITHUB_BRANCH_URL=$GITHUB_BRANCH_URL"
-      - echo "GITHUB_BRANCH_HEAD_SHA=$GITHUB_BRANCH_HEAD_SHA"
-      - echo "GITHUB_BRANCH_FULL_REF=$GITHUB_BRANCH_FULL_REF"
-      - echo "GITHUB_BRANCH_CAUSE_SKIP=$GITHUB_BRANCH_CAUSE_SKIP"
-      - echo "GITHUB_REPO_GIT_URL=$GITHUB_REPO_GIT_URL"
-      - echo "GITHUB_REPO_SSH_URL=$GITHUB_REPO_SSH_URL"
-
-  docker-build:
-  - node(docker-daemon):
-    - dockerAgent(looper-slave-img):
-      - shell: pwd
-  
-  test:
-    - shell: echo "Start test" 
-    - shell(name package): mvn -e clean package
-    - shell(name test): mvn -e clean test -DbuildURL=${BUILD_URL}
-    - shell(name install): mvn -e -U clean install
-  
-  release:
-    - shell(name install): mvn clean install -U -B
-    - shell(name deploy): mvn clean deploy -U -B
-    - shell(name release): mvn release:prepare release:perform -U -B
-
-  pr: #this flow gets invoked in case there is a commit on a PR branch
-    - shell: echo "PR Flow attempt 50"
-    - shell: sleep 10
-    #- call: default
-    - shell(name install): mvn clean install -U -B
-    - shell(name deploy): mvn clean deploy -U -B
-    - shell(name release): mvn release:prepare release:perform -U -B
-    #- call: parse-variables
-    #- call: docker-build
+  pr:
+   - (name Maven install) mvn -B -U clean install -Dmaven.test.skip=true
+   - call: runsonar
