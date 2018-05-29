@@ -1,4 +1,4 @@
-inherit: job://cerberus-core
+inherit: job://DET-tests/looper-template-mvn-prototypes
 
 flows:
   default:
