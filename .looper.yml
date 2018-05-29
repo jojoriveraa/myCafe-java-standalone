@@ -1,5 +1,1 @@
 inherit: job://DET-tests/looper-template-mvn-prototypes
-
-flows:
-  pr:
-    - call: default
