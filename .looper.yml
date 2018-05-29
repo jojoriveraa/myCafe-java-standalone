@@ -1,16 +1,6 @@
 inherit: job://DET-tests/looper-template-mvn-prototypes
 
 flows:
-  default:
-    - call: displayInfo
-    - call: purge
-    - call: buildAndDeploy
-    - call: runsonar
-    - call: hygieiaPublish
   
   pr:
-    - call: displayInfo
-    - call: purge
-    - call: build
-    - call: runsonar
-    - call: hygieiaPublish
+    - call: default
