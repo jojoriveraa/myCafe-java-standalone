@@ -5,6 +5,9 @@
 *.log
 
 # BlueJ files
+bin/
+
+# BlueJ files
 *.ctxt
 
 # Mobile Tools for Java (J2ME)
@@ -23,11 +26,7 @@
 hs_err_pid*
 
 ### Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode/
 
 ### Maven
 target/
