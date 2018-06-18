@@ -27,6 +27,10 @@ public final class Coffee {
         return milk;
     }
 
+    public boolean isThisCoffee() {
+        return this.beans >= 1;
+    }
+
     @Override
     public String toString() {
         return "Coffee{" +

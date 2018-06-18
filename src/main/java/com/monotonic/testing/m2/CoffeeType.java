@@ -6,7 +6,8 @@ package com.monotonic.testing.m2;
 public enum CoffeeType {
     ESPRESSO(7, 0),
     LATTE(7, 227),
-    FILTERCOFEE(10, 0);
+    FILTERCOFEE(10, 0),
+    MILK(0, 250);
 
     private final int requiredBeans;
     private final int requiredMilk;
