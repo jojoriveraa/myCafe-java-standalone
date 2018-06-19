@@ -9,11 +9,6 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<properties>
-		<myOrg>gtsmx-det</myOrg>
-		<myProject>myCafe</myProject>
-	</properties>
-
 	<groupId>com.jrivera</groupId>
 	<artifactId>myCafe</artifactId>
 	<version>1.0-SNAPSHOT</version>
@@ -83,13 +78,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<extensions>
-			<extension>
-				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-webdav-jackrabbit</artifactId>
-				<version>3.0.0</version>
-			</extension>
-		</extensions>
 	</build>
 
 </project>
