@@ -9,6 +9,11 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
+	<properties>
+		<myOrg>gtsmx-det</myOrg>
+		<myProject>myCafe</myProject>
+	</properties>
+
 	<groupId>com.jrivera</groupId>
 	<artifactId>myCafe</artifactId>
 	<version>1.0-SNAPSHOT</version>
@@ -86,17 +91,5 @@
 			</extension>
 		</extensions>
 	</build>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
-	<distributionManagement>
-		<site>
-			<id>mvn-site</id>
-			<url>dav:https://repository.walmart.com/content/sites/mvn-site/gtsmx-det/myCafe/</url>
-		</site>
-	</distributionManagement>
-
 
 </project>
