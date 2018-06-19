@@ -1,5 +1,4 @@
-package com.monotonic.testing.m2.cucumber;
-
+package com.monotonic.testing.bdd;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,15 +6,10 @@ import com.monotonic.testing.m2.Cafe;
 import com.monotonic.testing.m2.Coffee;
 import com.monotonic.testing.m2.CoffeeType;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
-class MyCoffee {
-    public static String isThisCoffee(Coffee coffee) {
-        return coffee.isThisCoffee() ? "Yes" : "Nope";
-    }
-}
 
 public class CoffeeSteps {
 
@@ -24,10 +18,13 @@ public class CoffeeSteps {
 
     private String actualAnswer;
 
-    @Given("^I used only milk$")
+    @And("^I used coffee beans$")
+    public void iUsedCoffeeBeans() throws Throwable {
+        coffee = cafe.brew(CoffeeType.ESPRESSO);
+    }
+
+    @And("^I used only milk$")
     public void iUsedOnlyMilk() throws Throwable {
-        cafe.restockBeans(300);
-        cafe.restockMilk(300);
         coffee = cafe.brew(CoffeeType.MILK);
     }
 
@@ -39,5 +36,18 @@ public class CoffeeSteps {
     @Then("^I should be told \"([^\"]*)\"$")
     public void iShouldBeTold(String expectedAnswer) throws Throwable {
         assertEquals(expectedAnswer, actualAnswer);
+    }
+
+    @Given("^I prepared a beverage$")
+    public void iPreparedABeverage() throws Throwable {
+        cafe.restockBeans(500);
+        cafe.restockMilk(500);
+    }
+
+}
+
+class MyCoffee {
+    public static String isThisCoffee(Coffee coffee) {
+        return coffee.isThisCoffee() ? "Yes" : "Nope";
     }
 }
